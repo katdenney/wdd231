@@ -15,3 +15,7 @@ function displayCourses(filter = "All"){
     });
 }
 document.getElementById("all").addEventListener("click", () => displayCourses("All"));
+document.getElementById("wdd").addEventListener("click", () => displayCourses("WDD"));
+document.getElementById("cse").addEventListener("click", () => displayCourses("CSE"));
+
+document.addEventListener("DOMContentLoaded", () => displayCourses());
