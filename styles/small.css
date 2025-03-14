@@ -1,1 +1,19 @@
 /* small page*/
+.course-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+.completed {
+    background-color: teal;
+    color: white;
+}
+.not-completed {
+    background-color: pink;
+    color: white;
+}
