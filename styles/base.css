@@ -1,0 +1,55 @@
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+header {
+    font-family: "Barlow", sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;;
+    padding: 20px;
+    background-color:#1B998B;
+}
+header img {
+    margin-right: 20px;
+    border-radius: 10%;
+    width: auto;
+    height: 150px;
+    box-shadow: 2px 2px 5px;
+}
+footer {
+    font-family: "Barlow", sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 20px;
+    background-color: #1B998B;
+}
+/* Course button styles */
+.course-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Completed course styles */
+.completed {
+    background-color: #1B998B;
+    color: white;
+}
+
+/* Not completed course styles */
+.not-completed {
+    background-color:#FFCFD2;
+    color: white;
+}
