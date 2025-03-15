@@ -1,28 +1,111 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+h1 {
+    grid-column: span 2;
+    text-align: start;
+    font-size: 2.5rem;
+    color: #011936;
+    font-weight: 100; 
+}
+
 body {
     font-family: "Barlow", sans-serif;
     font-weight: 400;
     background-color: #f4f4f4;
-    margin: 0;
-    padding: 20px;
 }
+
 header {
-    font-family: "Barlow", sans-serif;
-    font-weight: 600;
-    font-size: 24px;
-    margin-bottom: 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;;
+    flex-wrap: wrap;
     padding: 20px;
     background-color:#1B998B;
+    text-align: center;
 }
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
 header img {
     margin-right: 20px;
     border-radius: 10%;
-    width: auto;
     height: 150px;
+    width: auto;
     box-shadow: 2px 2px 5px;
 }
+
+.name {
+    font-size: 40px;
+    color: #011936;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    width:100%;
+    background-color:#011936;
+}
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style-type: none; /*this got rid of bullet points*/
+    padding: 10px 0;
+    width: 100%;
+}
+
+nav ul li {
+    display: flex;
+    flex-direction: row;
+}
+nav ul li a {
+    padding:5px 10px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+nav ul li a:hover {
+    background-color: #FFCFD2;
+    color: #011936;
+    border-radius: 5px;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+#section1 {
+    grid-column: span 1;
+    background-color: #FFCFD2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #011936 2px 2px 5px;
+}
+#section2 {
+    grid-column: span -1;
+    background-color: #FFCFD2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #011936 2px 2px 5px;
+}
+#section3 {
+    grid-column: span 2;
+    background-color: #FFCFD2;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #011936 2px 2px 5px;
+}
+
 footer {
     font-family: "Barlow", sans-serif;
     font-weight: 100;
@@ -37,19 +120,21 @@ footer {
     padding: 10px;
     margin: 5px 0;
     font-size: 16px;
-    cursor: pointer;
     border: none;
-    border-radius: 5px;
+    border-radius: 5px; 
+    
 }
 
 /* Completed course styles */
 .completed {
     background-color: #1B998B;
     color: white;
+    border-radius: 5px;
 }
 
 /* Not completed course styles */
 .not-completed {
     background-color:#FFCFD2;
     color: white;
+    border-radius: 5px; 
 }

@@ -1,1 +1,15 @@
 /*Larger page with media query*/
+@media (min-width: 640px) {
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    nav ul li{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+}

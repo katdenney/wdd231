@@ -1,19 +1,31 @@
 /* small page*/
-.course-button {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    margin: 5px 0;
-    font-size: 16px;
-    cursor: pointer;
-    border: none;
-    border-radius: 5px;
+
+header {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 20px;
+	border: 1px solid rgb(0 0 0 / 0.1);
 }
-.completed {
-    background-color: teal;
-    color: white;
+h1 {
+	font-size: 2rem;
 }
-.not-completed {
-    background-color: pink;
-    color: white;
+
+nav {
+	margin: 0 auto;
+	max-width: 800px;
 }
+nav ul {
+	list-style-type: none;
+    flex-wrap: wrap;
+}
+nav a {
+    display:flex;
+    flex-direction: row;
+	color: #fff;
+	text-align: center;
+	padding: 1rem;
+	text-decoration: none;
+}
+
+
