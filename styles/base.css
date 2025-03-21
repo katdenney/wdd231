@@ -80,6 +80,16 @@ nav ul li a:hover {
     color: #011936;
     border-radius: 5px;
 }
+/* wayfinding*/
+nav ul li a.active {
+    background-color: #FFCFD2;
+    color: #011936;
+    border-radius: 5px;
+}
+/*hamburger*/
+#menu-toggle {
+    display: none;
+}
 main{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
