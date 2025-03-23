@@ -1,21 +1,36 @@
-{"family_name": "last name string",
-"moved_in": "date",
-"number_of_members": "number",
-"Visited_by_bishopric": "boolean",
+{"family_name": "Denney",
+"moved_in": "2015-04-01",
+"number_of_members": 6,
+"Visited_by_bishopric": true,
 "family_members": [
     {
-        "name": "name string",
-        "gender": "gender string",
-        "birth_date": "Date string"
+        "name": "charles",
+        "gender": "Male",
+        "birth_date": "1987-06-29"
     },
     {
-        "name": "name string",
-        "gender": "gender string",
-        "birth_date": "Date string"
+        "name": "Katlin",
+        "gender": "Female",
+        "birth_date": "1989-07-30"
     },
     {
-        "name": "name string",
-        "gender": "gender string",
-        "birth_date": "Date string"
+        "name": "Martin",
+        "gender": "Male",
+        "birth_date": "2008-08-17"
+    },
+    {
+        "name": "Lucy",
+        "gender": "Female",
+        "birth_date": "2010-07-19"
+    },
+    {
+        "name": "Edison",
+        "gender": "Male",
+        "birth_date": "2018-10-26"
+    },
+    {
+        "name": "Penelope",
+        "gender": "Female",
+        "birth_date": "2020-06-03"
     }
 ]}
