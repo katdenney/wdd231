@@ -1,0 +1,21 @@
+{"family_name": "last name string",
+"moved_in": "date",
+"number_of_members": "number",
+"Visited_by_bishopric": "boolean",
+"family_members": [
+    {
+        "name": "name string",
+        "gender": "gender string",
+        "birth_date": "Date string"
+    },
+    {
+        "name": "name string",
+        "gender": "gender string",
+        "birth_date": "Date string"
+    },
+    {
+        "name": "name string",
+        "gender": "gender string",
+        "birth_date": "Date string"
+    }
+]}
