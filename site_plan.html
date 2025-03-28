@@ -3,40 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+
+    <meta property="og:title" content="Saratoga Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/site_plan.html"> <!-- URL of the page -->
+
+    <meta name="description" content="This is the site plan for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
+    <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
+
+    <link href="chamber/favicontree.ico" rel="icon" type="image/x-icon"> <!-- favicon -->
+    <title>Site Plan</title>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/script.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet"> <!--google fonts -->
+    
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/site_plan.css"> <!-- Main stylesheet for the site plan page -->
 </head>
 <body>
     <header>
         <h1>Site Plan</h1>
+        <nav>
+            <ul id="menu">
+                <li><a href="chamber/index.html" class="active">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="chamber/directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+            </ul> 
+        </nav>
     </header>
     <main>
         <section>
             <h2>Site name</h2>
-            <p><strong>[Town Name Here] Chamber of Commerce</strong></p>
+            <p><strong>Saratoga Chamber of Commerce</strong></p>
         </section>
         <section>
             <h2> Purpose</h2>
-            <p>the purpse blah blah blah here</p>
+            <p>Uniting our community, supporting local businesses & connecting neighbors. This website will serve as a resource hub for businesses in the city of Saratoga. 
+                The site will provide information on local events, host networking opportunities, create business directories, and encourage local shopping. 
+                It aims to promote local economic growth, support local businesses, and foster a sense of community between the businesses. </p>
         </section>
         <section>
             <h2>Target Market</h2>
-            <p>the target market blah blah blah here</p>
+            <p>Business owners and members of the comunity and surrounding areas.</p>
         </section>
         <section>
             <h2>site goals</h2>
-            <p>site goals</p>
+            <p>To inform the commuinity of social events and networking oppertunities and attract new businesses to encourage economic health for the community.</p>
         </section>    
         <section>
             <h2>user personas</h2>
-            <p>examples of people who will use the site</p>
+            <p>Small Business Owner: Joe is a 45 year old entreprenueur who owns two local restaurants. he is looking for new vendors to work with. 
+                Corporate Executive: Sam is a 52 year old executive at a large financal company looking for partnership opportunities. 
+                University student: Amanda is a student who recently moved to Saratoga </p>
         </section>   
         <section>
             <h2>scenarios</h2>
-            <p>examples of HOW the website is used by specific people</p>
+            <p>A local business owner is interested in joining the chamber of commerce to network with other business owners. They visit the website to find information on membership benefits, fees, and how to apply.
+                A community member is looking for upcoming events and workshops hosted by the chamber. They visit the website to browse the events calendar and register for interesting activities.
+                A visitor from out of town is considering relocating to the area and wants to learn more about the local business environment. They explore the chamber's website for information on existing businesses, availability of skilled labor, and quality of life in the area.</p>
         </section> 
         <section>
             <h2>seo plan</h2>
-            <p>stuff for the seo plan </p>
+            <p>Use relevant keywords in site descriptions, content, and blog posts.
+                Verify the site on Google's Business Profile.
+                Get inbound links or backlinks from all member business to improve rankings.
+                Embed Google Analytics in all site pages.</p>
         </section>  
         <section>
             <h2>design Brief</h2>
@@ -49,13 +85,22 @@
         </section> 
         <section>
             <h2>site map</h2>
-            <p>site map</p>
+            <img src="images/site_plan.png" alt="site map">
         </section> 
-        <section>
+        <section class="wireframes">
             <h2>wireframes</h2>
-            <p>wireframe images</p>
+            <img src="images/chamber-desktop-wireframe.png" alt="chamber-desktop-wireframe">
         </section> 
+    </main>
+    <footer>
+        <p>
+            &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
+        </p>
+        <p>
+            <span id="lastModified" ></span>
+        </p>
 
+    </footer>
 
 </body>
 </html>

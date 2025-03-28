@@ -1,0 +1,23 @@
+body {
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+    background-color: #f4f4f4;
+}
+h2 {
+    background-color: #011936;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    color:#f4f4f4;
+    border-radius: 5px;
+    box-shadow: #011936 2px 2px 5px;
+}
+#wireframe {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #011936 2px 2px 5px;
+}
