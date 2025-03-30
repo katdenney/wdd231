@@ -1,8 +1,10 @@
 //weather for home screen
 const apiKey = "4868785dd73be99d7a8c9cb3ef547b63"; //weather api key from open weather map
 const city = "Saratoga";
+const state = "CA";
+const country = "US";
 const units = "imperial"; //fahrenheit
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=${units}&appid=${apiKey}`;
+const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city},${state},${country}&units=${units}&appid=${apiKey}`;
 
 async function fetchWeather() {
     const response = await fetch(apiUrl);
