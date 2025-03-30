@@ -1,0 +1,52 @@
+/* This is the CSS file for the Chamber of Commerce website */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    color:#130D01;
+    font-weight: 400;
+}
+body {
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none; /*this got rid of bullet points*/
+    margin: 10px;
+    padding: 10px 0;
+    width: 100%;
+}
+#menu li {
+    margin: 0 10px;
+    padding-right: 20px;
+    border-radius: 5px;
+}
+nav ul li a.active {
+    background-color: #FFCB77;
+    color:#130D01;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background: color #17c3b2;
+    color: #fe6d73;
+    border-radius: 5px;
+}
+nav ul li a:visited {
+    background: color #17c3b2;
+}
+main {
+    display: grid;
+    grid-template-columns: repeat(3, 30%);
+    background-color: #f4f4f4;
+}
+.grid-view {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+

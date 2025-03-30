@@ -17,14 +17,14 @@
 
     <script src="scripts/date.js" defer></script> <!-- JavaScript file for the date in the footer -->
     <script src="scripts/script.js" defer></script> 
-    <script src="chamber/scripts.js" defer></script> <!-- JavaScript file for the chamber website -->
+    <script src="scripts/view.js" defer></script> <!-- JavaScript file for the view businesses -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <!--google fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet"> <!--google fonts -->
     
-    <link rel="stylesheet" href="/chamber/normalize.css">
-    <link rel="stylesheet" href="/chamber/styles.css"> <!-- Main stylesheet for the chamber website -->
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
+    <link rel="stylesheet" href="styles/styles.css"> <!-- Main stylesheet for the chamber website -->
     
    
 </head>
@@ -40,15 +40,27 @@
             </ul>  
         </nav>
     </header>
-    <main>
-
+    <main class="main-content">
+        <section>
+            <h2>Directory</h2>
+            <p>Businesses in the Saratoga area</p>
+            <div class="view-toggle">
+                <button id="gridViewBtn">Grid View</button>
+                <button id="listViewBtn">List View</button>
+            </div>
+        </section>
+        <section>
+            <div id="directory" class="grid-view">
+                <h2>Businesses</h2>
+            </div>
+        </section>
     </main>
     <footer>
         <p>
             &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
         </p>
         <p>
-            <span id="lastModified" ></span>
+            <span id="lastModified" ></span> Katlin Denney WDD231
         </p>
     
     </footer>

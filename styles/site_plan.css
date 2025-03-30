@@ -1,14 +1,52 @@
-body {
+/* This is the CSS file for the site plan page */
+* {
+    color:#130D01;
     font-family: "Barlow", sans-serif;
     font-weight: 400;
-    background-color: #f4f4f4;
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none; /*this got rid of bullet points*/
+    padding: 10px 0;
+    width: 100%;
+    background-color: #227C9D ;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: #011936 2px 2px 5px;
+    font-weight: 400;
+}
+#menu li {
+    margin: 0 10px;
+    padding-right: 20px;
+}
+nav ul li a.active {
+    background-color: #FFCB77;
+    color:#130D01;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background: color #17c3b2;
+    color: #fe6d73;
+    border-radius: 5px;
+}
+nav ul li a:visited {
+    background: color #17c3b2;
+}
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-weight: 400;
+    background-color: #FEF9EF ;
 }
 h2 {
-    background-color: #011936;
+    background-color: #FFCB77 ;
     text-align: center;
     padding: 5px;
     margin-bottom: 5px;
-    color:#f4f4f4;
     border-radius: 5px;
     box-shadow: #011936 2px 2px 5px;
 }
@@ -20,4 +58,7 @@ h2 {
     padding: 20px;
     border-radius: 10px;
     box-shadow: #011936 2px 2px 5px;
+}
+#wireframe img {
+    justify-items: center;
 }

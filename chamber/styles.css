@@ -1,5 +1,0 @@
-main {
-    display: grid;
-    grid-template-columns: repeat(3, 30%);
-    background-color: #f4f4f4;
-}
