@@ -4,13 +4,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const listViewBtn = document.getElementById("listViewBtn");
     const directory = document.getElementById("directory");
 });
+
 //grid veiw
 gridViewBtn.addEventListener("click", () => {
     directory.classList.remove("list-view");
     directory.classList.add("grid-view");
 });
-//list view
 
+//list view
 listViewBtn.addEventListener("click", () => {
     directory.classList.remove("grid-view");
     directory.classList.add("list-view");
