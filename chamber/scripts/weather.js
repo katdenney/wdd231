@@ -10,16 +10,18 @@ async function fetchWeather() {
         throw new Error("Network response was not ok");
     }
     const data = await response.json();
-    dislayWeather(data);
+    displayWeather(data);
 }
+
 function displayWeather(data) {
     const temp = Math.round(data.main.temp);
     const description = data.weather[0].description;
-}
-const weatherContainer = document.getElementById("weather");
-weatherContainer.innerHTML = "";
-const p = document.createElement("p");
-p.textContent = `${temp}°F - ${description.charAt(0).toUpperCase() + description.slice(1)}`;
-weatherContainer.appendChild(p);
 
+    const weatherContainer = document.getElementById("weather");
+    weatherContainer.innerHTML = "";
+
+    const p = document.createElement("p");
+    p.textContent = `${temp}°F - ${description.charAt(0).toUpperCase() + description.slice(1)}`;
+    weatherContainer.appendChild(p);
+}
 document.addEventListener("DOMContentLoaded", fetchWeather);
