@@ -11,6 +11,14 @@ body {
     max-width: 100%;
     overflow-x: hidden; /* Prevent horizontal scrolling */
 }
+.hero-text {
+    position: relative;
+    color: white;
+    text-align: center;
+    background: #17c3b2; /* Semi-transparent black background */
+    padding: 1.5rem;
+    border-radius: 10px;
+}
 #menu {
     display: flex;
     flex-direction: row;
