@@ -12,7 +12,7 @@
     <meta name="description" content="This is the homepage for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
     <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
 
-    <link rel="icon" href="chamber/favicontree.ico" type="image/x-icon"> <!-- favicon -->
+    <link rel="icon" href="images/favicontree.ico" type="image/x-icon"> <!-- favicon -->
     <title>Chamber of Commerce Home Page</title>
 
     <script src="scripts/date.js" defer></script> <!--date for footer -->
@@ -30,7 +30,18 @@
 </head>
 <body>
     <header>
-        <h1>Satatoga Chamber of Commerce </h1>
+        <section class="top-header">
+            <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
+            <h1>Satatoga Chamber of Commerce </h1>
+            <nav>
+                <ul id="menu">
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/index.html" class="active">Home</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/join.html">Join</a></li>
+                </ul> 
+            </nav>
+        </section>
         <section class="hero">
             <img src="images/hero.jpg" alt="Welcome to Saratoga Chamber of Commerce">
             <div class="hero-text">
@@ -39,21 +50,17 @@
                 <a href="join.html" class="hero-button">Join Now</a>
             </div>
         </section>
-        <nav>
-            <ul id="menu">
-                <li><a href="https://katdenney.github.io/wdd231/chamber/index.html" class="active">Home</a></li>
-                <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html">Discover</a></li>
-                <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html">Directory</a></li>
-                <li><a href="https://katdenney.github.io/wdd231/chamber/join.html">Join</a></li>
-            </ul> 
-        </nav>
     </header>
     <main class= "main-content">
+        <h2>Home Page</h2>
         <section> 
             <h2>Current Events</h2>
         </section>
-        <section id="weather"> 
+        <section id="weather-section"> 
             <h2>Weather</h2>
+            <div id="current-weather"></div>
+            <h2>3-Day Forecast</h2>
+            <div id="three-day-forecast" class="forecast-grid"></div>
         </section>
         <section>
             <h2>Company Spotlights</h2>
@@ -61,13 +68,28 @@
         </section>
             
     </main>
-    <footer>
-        <p>
-            &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
-        </p>
-        <p>
-            <span id="lastModified" ></span> Katlin Denney WDD231
-        </p>
+    <footer class="foot-container">
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
+            </p>
+            <p>
+                <span id="lastModified" ></span> Katlin Denney WDD231
+            </p>
+        </div>
+        <div>
+            <img src="images/fb.avif" alt="facebook Logo" class="footer-logo">
+            <img src="images/in.avif" alt="linkedin Logo" class="footer-logo">
+            <img src="images/ig.avif" alt="instagram Logo" class="footer-logo">
+        </div>
+        <div>
+            Saratoga Chamber of Commerce<br>
+            123 Main St.<br>
+            Saratoga, CA 12345<br>
+            Phone: (123) 456-7890<br>
+            info@saratogachamber.org<br>
+        </div>
+
 
     </footer>
 </body>
