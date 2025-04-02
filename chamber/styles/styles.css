@@ -21,11 +21,16 @@ body {
     max-height: 200px;
     overflow: hidden; /* Hide overflow */
 }
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 .logo {
     background: rgba(255, 255, 255, 0.65); /* Semi-transparent background */
-    border-radius: 20px;
     margin-left:20px;
     box-shadow: #011936 2px 2px 5px;
+    animation: fadeIn 2s ease-in;
+    border-radius: 20px;
 }
 .top-header h1 {
     background-color:rgba(255, 255, 255, 0.65);;
@@ -53,6 +58,11 @@ body {
     border-radius: 10px;
     box-shadow: #011936 2px 2px 5px;
 }
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
 .hero-button {
     display: inline-block;
     margin-top: 10px;
@@ -63,6 +73,8 @@ body {
     font-weight: bold;
     border-radius: 5px;
     box-shadow: #011936 2px 2px 5px;
+    transition: background-color 0.3s ease-in-out;
+    animation: bounce 1.3s ease-in-out infinite;
 }
 .hero-button:hover {
     background: #FEF9EF;
@@ -98,6 +110,7 @@ nav li a {
     align-items: center;
     margin:10px;
     padding: 5px;
+    transition: background-color 0.2s ease-in-out;
 
 }
 
@@ -112,6 +125,7 @@ nav ul li a:hover {
     color: #FEF9EF;
     text-shadow: #130D01 1px 1px 5px;
     border-radius: 5px;
+    box-shadow: #011936 2px 2px 5px;
 }
 nav ul li a:visited {
     background-color: #127d72;
@@ -148,10 +162,15 @@ section {
     grid-column: 1/-1;
     font-size: 2rem;
 }
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
 #weather-section {
     background-color:#917446;
     grid-column: 2/3;
     grid-row:2;
+    animation: slideIn 1s ease-out;
 }
 .spotlights {
     grid-column: 1/-1;
@@ -161,6 +180,12 @@ section {
     gap: 20px;
     justify-content: center;
     text-align: center;
+    animation: fadeIn 2s ease-in;
+}
+.spotlights img {
+    box-shadow: #011936 2px 2px 5px;
+    border-radius: 5px;
+
 }
 .grid-view {
     display: grid;
