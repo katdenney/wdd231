@@ -17,6 +17,10 @@
 
     <script src="scripts/date.js" defer></script> <!--date for footer -->
     <script src="scripts/menuTog.js" defer></script> <!--i'll probs use this ?-->
+
+    <script type="module" src="scripts/join.js" defer></script>
+    <script type="module" src="scripts/modal.js" defer></script>
+    <script type="module" src="scripts/animation.js" defer></script>
    
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts -->
@@ -44,13 +48,21 @@
             <h2>Become a Member</h2>
         </section>
         <section> 
-            <form class="form">
-                <input name= "username" type= "text" placeholder= "username">
-                <input name= "username" type= "text" placeholder= "username">
-                <input name= "username" type= "text" placeholder= "username">
-                <input name= "termsconditions" type= "checkbox">
-
-                <button type= "submit"> Submit</button>
+            <form id="form" method= "get" action="thankyou.html">
+                <label>First Name: <input type= "text" name="firstNmae" autocomplete="given-name" required></label><br>
+                <label>Last Name: <input type= "text" name="lastNmae" autocomplete="family-name" required></label><br>
+                <label>Title: <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"><br> <!-- no silly characters only letters spaces and hyphens. 7 character min -->
+                <label>Email: <input type="email" name="email" autocomplete="email" placeholder="youremail@email.com" required></label><br>
+                <label>Phone: <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required></label><br>
+                <label>Business: <input type="text" name="business" autocomplete="orginization" required></label><br>
+                <label>Membership Level:
+                    <select name="membership" required>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                        <option></option>
+                    </select>
+                </label>
             </form>
         </section>
             
