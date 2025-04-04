@@ -7,16 +7,16 @@
     <meta property="og:title" content="Saratoga Chamber of Commerce Home">
     <meta property="og:type" content="website">
     <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
-    <meta property="og:url" content="https://katdenney.github.io/wdd231/index.html"> <!-- URL of the page -->
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/join.html"> <!-- URL of the page -->
 
-    <meta name="description" content="This is the homepage for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
+    <meta name="description" content="This is the join form for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
     <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
 
     <link rel="icon" href="images/favicontree.ico" type="image/x-icon"> <!-- favicon -->
-    <title>Chamber of Commerce Home Page</title>
+    <title>Join the Saratoga Chamber of Commerce</title>
 
     <script src="scripts/date.js" defer></script> <!--date for footer -->
-    <script src="scripts/menuTog.js" defer></script> <!--i'll probs use this ?-->
+    <script src="scripts/menuTog.js" defer></script> <!-- toggle for nav menu hamburger -->
 
     <script type="module" src="scripts/join.js" defer></script>
     <script type="module" src="scripts/modal.js" defer></script>
@@ -29,27 +29,28 @@
 
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/media.css">
 
 </head>
 <body>
     <header>
-        <h1>Join the Satatoga Chamber of Commerce </h1>
-        <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button>
-        <nav>
-            <ul id="menu">
-                <li><a href="https://katdenney.github.io/wdd231/chamber/index.html">Home</a></li>
-                <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html">Discover</a></li>
-                <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html">Directory</a></li>
-                <li><a href="https://katdenney.github.io/wdd231/chamber/join.html" class="active">Join</a></li>
-            </ul> 
-        </nav>
+        <section class="top-header">
+            <h1>Join the Satatoga Chamber of Commerce </h1>
+            <button id="menu-toggle" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <nav>
+                <ul id="menu">
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/index.html">Home</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/join.html" class="active">Join</a></li>
+                </ul> 
+            </nav>
+    </section>
     </header>
     <main class= "main-content">
-        <section>
-            <h2>Become a Member</h2>
-        </section>
-        <section> 
+        <h2>Become a Member</h2>
+        <section class="join-section"> 
             <form id="form" method= "get" action="thankyou.html">
                 <label>First Name: <input type= "text" name="firstNmae" autocomplete="given-name" required></label><br>
                 <label>Last Name: <input type= "text" name="lastNmae" autocomplete="family-name" required></label><br>
@@ -67,16 +68,71 @@
                 </label>
             </form>
         </section>
+        <section>
+            <h2>choose a membership level  maybe ?</h2>
+        </section>
             
     </main>
-    <footer>
-        <p>
-            &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
-        </p>
-        <p>
-            <span id="lastModified"></span> Katlin Denney WDD231
-        </p>
+    <footer class="foot-container">
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
+            </p>
+            <p>
+                <span id="lastModified"></span> Katlin Denney WDD231
+            </p>
+        </div>
+        <div>
+            <img src="images/fb.avif" alt="facebook Logo" class="footer-logo">
+            <img src="images/in.avif" alt="linkedin Logo" class="footer-logo">
+            <img src="images/ig.avif" alt="instagram Logo" class="footer-logo">
+        </div>
+        <div>
+            Saratoga Chamber of Commerce<br>
+            123 Main St.<br>
+            Saratoga, CA 12345<br>
+            Phone: (123) 456-7890<br>
+            info@saratogachamber.org<br>
+        </div>
 
     </footer>
 </body>
 </html>
+<!-- * Use a form with a get method and action that points to a confirmation page named "thankyou.html".
+    Form fields:
+applicant's first name, text type, required, name, title, and correct autocomplete value so this field autofills with the first name
+~*** NOTES: The attribute value is either the keyword off or on, or a space-separated <token-list> that describes the meaning of the autocompletion value.
+off
+The browser is not permitted to automatically enter or select a value for this field. It is possible that the document or application provides its own autocomplete
+ feature, or that security concerns require that the field's value not be automatically entered.
+on
+The browser is allowed to automatically complete the input. No guidance is provided as to the type of data expected in the field, so the browser may use its own 
+judgement.
+<token-list>
+    An ordered set of space-separated tokens consisting of autofill detail tokens preceded by optional sectioning and either billing or shipping grouping tokens.
+     Phone numbers, email addresses, and messaging protocol tokens are preceded by a token identifying the type of recipient.
+ ~~In most modern browsers, setting autocomplete to "off" will not prevent a password manager from asking the user if they would like 
+    to save username and password information, or from automatically filling in those values in a site's login form. See Managing 
+    autofill for login fields.~~ ***~
+applicant's last name, text type, required, name, title, and correct autocomplete value so this field autofills with the last name
+applicant's organizational title within their organization, text type, name, title, autocomplete value of "organization-title", and pattern to only accept alpha characters, hyphens, and spaces with a minimum of seven (7) characters using a regular expression
+an email address, email type, required, name, title, correct autocomplete value, and placeholder which contains an example email input.
+a mobile phone number, telephone type, required, name, title, and correct autocomplete value
+the business/organization's name, text type, required, name, title, and correct autocomplete value of "organization".
+a membership level selection using an appropriate form field of your choosing to allow the user to select a membership level. There are four membership levels.
+NP Membership is for non profit organizations and there is no fee.
+Bronze Membership
+Silver Membership
+Gold Membership
+a business/organization's description, text area, title, and name
+the timestamp, hidden type, name, and id. This field contains the current date and time that the form was loaded by the user.
+A form submission button using input of type submit that is properly labeled in the text node of the button.
+Each field element, including the textarea, should be encased in a label tag to support accessibility.
+Build 4 different cards to display the membership level titles and a link to get additional information. On small screens these are displayed below the form and on larger screens these are displayed to the right of the form.
+Use four HTML modals to display the benefits of each membership level. The modals should display when the user clicks the link on each card (example small screen – example large screen).
+These membership levels have increasing costs as well as increased benefits per level. Benefits might include special events, training, advertising (like spotlight positions on the home page), event discounts, etc.
+Ensure that the design meets standards such as favorable eye tracking and proper keyboard progression (tabs) for accessibility. 📃 Designing more Efficient Forms
+Incorporate animation/transition into the initial display of 4 different membership level cards or buttons. (This is different than using a transition on mouse hover.) For example, you could change the color over time, change the opacity, change the margin, etc. Try to draw attention to these membership cards without being overly distracting. Example of animation on initial page load
+Create a new page named "thankyou.html" that expresses gratitude for filling out the form. This page should load when the user has successfully submitted the form. The design should follow your site pattern.
+On the "thankyou.html" page, you will display the form information entered by the user for all "required" form fields (first name, last name, email, mobile number, business name, and current date timestamp from the hidden field). Style and display the information as you practiced when you completed the "Advanced Forms" learning activity.
+-->
