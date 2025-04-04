@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const menu = document.getElementById("menu");
 
     menuToggle.addEventListener("click", function() {
-        menu.classList.toggle("open");
+        menu.classList.toggle("show");
     });
 });
 

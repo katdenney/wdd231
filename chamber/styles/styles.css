@@ -1,4 +1,18 @@
 /* This is the CSS file for the Chamber of Commerce website */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+/* global */
 * {
 	margin: 0;
 	padding: 0;
@@ -9,8 +23,9 @@
 }
 body {
     max-width: 100%;
-    overflow-x: hidden; /* Prevent horizontal scrolling */
+    overflow-x: hidden; /* new Preventing horizontal scrolling */
 }
+/* Header and nav*/
 .top-header {
     display: flex;
     flex-direction: row;
@@ -19,18 +34,15 @@ body {
     padding: 10px 0;
     box-shadow: #011936 2px 2px 5px;
     max-height: 200px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden; /* new Hide overflow */
 }
-@keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
-}
+
 .logo {
     background: rgba(255, 255, 255, 0.65); /* Semi-transparent background */
     margin-left:20px;
     box-shadow: #011936 2px 2px 5px;
-    animation: fadeIn 2s ease-in;
     border-radius: 20px;
+    animation: fadeIn 2s ease-in;
 }
 .top-header h1 {
     background-color:rgba(255, 255, 255, 0.65);;
@@ -40,8 +52,73 @@ body {
     box-shadow: #011936 2px 2px 5px;
 }
 h1, h2 {
-    font-weight: 600;
+    font-weight: 600; /* could remove later */
 }
+nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: rgba(244, 244, 244, 0.55);
+    box-shadow: #011936 2px 2px 5px;
+}
+nav li a {
+    align-items: center;
+    margin:10px;
+    padding: 5px;
+    transition: background-color 0.2s ease-in-out;
+
+}
+nav ul li a.active {
+    color:#f4f4f4;
+    font-weight: 600;
+    text-shadow: #130D01 1px 1px 2px;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background-color: #127d72;
+    color: #FEF9EF;
+    text-shadow: #130D01 1px 1px 5px;
+    border-radius: 5px;
+    box-shadow: #011936 2px 2px 5px;
+}
+nav ul li a:visited {
+    background-color: #127d72;
+}
+/* menu */
+#menu {
+    display : flex;
+    justify-content: space-between;
+    flex-direction: row;
+    margin: 20px;
+    list-style-type: none; /*this got rid of bullet points*/
+}
+#menu li {
+    margin:10px;
+    background-color:#917446;
+    align-items: center;
+    box-shadow: #011936 2px 2px 5px;
+    padding: 5px;
+    align-content: center;
+    border-radius: 5px;
+}
+ /* Hamburger button */
+ 
+ #menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 5rem;
+    background: none;
+    border: none;
+    color: #127d72;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    z-index:10;
+}
+/* hero */
 .hero img {
     width: 100%;
     height: 100%;
@@ -60,11 +137,6 @@ h1, h2 {
     border-radius: 10px;
     box-shadow: #011936 2px 2px 5px;
 }
-@keyframes bounce {
-    0% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-    100% { transform: translateY(0); }
-}
 .hero-button {
     display: inline-block;
     margin-top: 10px;
@@ -81,57 +153,7 @@ h1, h2 {
 .hero-button:hover {
     background: #FEF9EF;
 }
-#menu {
-    display : flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 20px;
-    list-style-type: none; /*this got rid of bullet points*/
-}
-#menu li {
-    margin:10px;
-    background-color:#917446;
-    align-items: center;
-    box-shadow: #011936 2px 2px 5px;
-    padding: 5px;
-    align-content: center;
-    border-radius: 5px;
-}
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 20px;
-    border-radius: 20px;
-    background-color: rgba(244, 244, 244, 0.55);
-    box-shadow: #011936 2px 2px 5px;
-}
-
-nav li a {
-    align-items: center;
-    margin:10px;
-    padding: 5px;
-    transition: background-color 0.2s ease-in-out;
-
-}
-
-nav ul li a.active {
-    color:#f4f4f4;
-    font-weight: 600;
-    text-shadow: #130D01 1px 1px 2px;
-    border-radius: 5px;
-}
-nav ul li a:hover {
-    background-color: #127d72;
-    color: #FEF9EF;
-    text-shadow: #130D01 1px 1px 5px;
-    border-radius: 5px;
-    box-shadow: #011936 2px 2px 5px;
-}
-nav ul li a:visited {
-    background-color: #127d72;
-}
+/* main+ sections */
 .main-content {/* Main content for home page */
     display: grid;
     grid-template-columns:1fr 1fr;
@@ -150,6 +172,10 @@ section {
     border-radius: 10px;
     box-shadow: #011936 2px 2px 5px;
 }
+.main-content h2 {
+    grid-column: 1/-1;
+    font-size: 2rem;
+}
 .events, #weather-section {
     display:flex;
     flex-direction: column;
@@ -160,14 +186,7 @@ section {
     grid-column: 1/2;
     grid-row: 2;
 }
-.main-content h2 {
-    grid-column: 1/-1;
-    font-size: 2rem;
-}
-@keyframes slideIn {
-    from { transform: translateX(-100%); }
-    to { transform: translateX(0); }
-}
+
 #weather-section {
     background-color:#917446;
     grid-column: 2/3;
@@ -194,6 +213,13 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+
+.businesses{ /*smh */
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+}
+/* footer*/
 .foot-container {
     display: flex;
     flex-direction: row;
@@ -206,3 +232,31 @@ section {
     box-shadow: #011936 2px 2px 5px;
     
 }
+@media screen and (max-width: 48em) {
+    #menu {
+      display: none;
+      flex-direction: column;
+      background-color: rgba(244, 244, 244, 0.95);
+      position: absolute;
+      top: 80px;
+      right: 20px;
+      padding: 10px;
+      border-radius: 10px;
+      box-shadow: #011936 2px 2px 5px;
+      z-index: 9;
+    }
+    #menu.show {
+      display: flex;
+    }
+  
+    #menu li {
+      margin: 10px 0;
+      width: 100%;
+      text-align: center;
+    }
+  }
+  @media screen and (min-width: 48em) {
+    #menu-toggle{
+        display: none;
+    }
+  }

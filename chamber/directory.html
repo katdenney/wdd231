@@ -16,7 +16,8 @@
     <title>Saratoga Chamber of Commerce Directory Page</title>
 
     <script src="scripts/date.js" defer></script> <!-- JavaScript file for the date in the footer -->
-    <script src="scripts/script.js" defer></script> 
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/menuTog.js" defer></script> <!--i'll probs use this ?--> 
     <script src="scripts/view.js" defer></script> <!-- JavaScript file for the view businesses -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts -->
@@ -24,13 +25,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet"> <!--google fonts -->
     
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
-    <link rel="stylesheet" href="styles/styles.css"> <!-- Main stylesheet for the chamber website -->
+    <link rel="stylesheet" href="styles/styles.css">  <!--Main stylesheet for the chamber website -->
+    
     
    
 </head>
 <body>
-    <header>
+    <header class="top-header">
         <h1>Saratoga Chamber of Commerce Directory</h1>
+        <button id="menu-toggle" aria-label="Toggle menu">
+            &#9776;
+        </button>
         <nav>
             <ul id="menu">
                 <li><a href="https://katdenney.github.io/wdd231/chamber/index.html">Home</a></li>
