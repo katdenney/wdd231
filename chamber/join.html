@@ -18,9 +18,10 @@
     <script src="scripts/date.js" defer></script> <!--date for footer -->
     <script src="scripts/menuTog.js" defer></script> <!-- toggle for nav menu hamburger -->
 
+    <script type="module" src="scripts/timestamp.js" defer></script>
     <script type="module" src="scripts/join.js" defer></script>
     <script type="module" src="scripts/modal.js" defer></script>
-    <script type="module" src="scripts/animation.js" defer></script>
+    
    
 
     <link rel="preconnect" href="https://fonts.googleapis.com"> <!--google fonts -->
@@ -50,6 +51,48 @@
     </header>
     <main class= "main-content">
         <h2>Become a Member</h2>
+        <section>
+            <!--non-profit-->
+            <div class="membership-card">
+                <h3>Non-profit Membership</h3>
+                <a href="#" class="membership-link" data-modal="np-modal">View Benefits</a>
+            </div>
+            <dialog id="np-modal">
+                <h2>Member Benefits</h2>
+                <p>Member benefits like recieving a newsletter in your inbox</p>
+                <button onclick="document.getElementById('np-modal').close()">Close</button>
+            </dialog>
+            <!--bronze-->
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <a href="#" class="membership-link" data-modal="bronze-modal">View Benefits</a>
+            </div>
+            <dialog id="bronze-modal">
+                <h2>Benefits</h2>
+                <p>Bronze benefits like discounts on event tickets</p>
+                <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+            </dialog>
+            <!--silver-->
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <a href="#" class="membership-link" data-modal="silver-modal">View Benefits</a>
+            </div>
+            <dialog id="silver-modal">
+                <h2>Benefits</h2>
+                <p>Silver benefits like free entry to events all season</p>
+                <button onclick="document.getElementById('silver-modal').close()">Close</button>
+            </dialog>
+            <!--gold-->
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <a href="#" class="membership-link" data-modal="gold-modal">View Benefits</a>
+            </div>
+            <dialog id="gold-modal">
+                <h2>Benefits</h2>
+                <p>Gold benefits like a spotlight position on our home page </p>
+                <button onclick="document.getElementById('gold-modal').close()">Close</button>
+            </dialog>
+        </section>
         <section class="join-section"> 
             <form id="form" method= "get" action="thankyou.html">
                 <label>First Name: <input type= "text" name="firstNmae" autocomplete="given-name" required></label><br>
@@ -59,17 +102,17 @@
                 <label>Phone: <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required></label><br>
                 <label>Business: <input type="text" name="business" autocomplete="orginization" required></label><br>
                 <label>Membership Level:
-                    <select name="membership" required>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                        <option></option>
-                    </select>
+                    <select name="membership" title="Select your membership level" required>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select><br>
                 </label>
+                <label>Description: <textarea name="description" title="Describe your organization"></textarea></label><br>
+                <input type="hidden" id="timestamp" name="timestamp"><br>
+                <input type="submit" value="Join Us"><br>
             </form>
-        </section>
-        <section>
-            <h2>choose a membership level  maybe ?</h2>
         </section>
             
     </main>
