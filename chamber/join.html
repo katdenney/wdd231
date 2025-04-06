@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Saratoga Chamber of Commerce Home">
+    <meta property="og:title" content=" Join the Saratoga Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
     <meta property="og:url" content="https://katdenney.github.io/wdd231/join.html"> <!-- URL of the page -->
@@ -57,7 +57,7 @@
                 <h3>Non-profit Membership</h3>
                 <a href="#" class="membership-link" data-modal="np-modal">View Benefits</a>
             </div>
-            <dialog id="np-modal">
+            <dialog id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-desc"></dialog>>
                 <h2>Member Benefits</h2>
                 <p>Member benefits like recieving a newsletter in your inbox</p>
                 <button onclick="document.getElementById('np-modal').close()">Close</button>
@@ -67,7 +67,7 @@
                 <h3>Bronze Membership</h3>
                 <a href="#" class="membership-link" data-modal="bronze-modal">View Benefits</a>
             </div>
-            <dialog id="bronze-modal">
+            <dialog id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-desc"></dialog>>
                 <h2>Benefits</h2>
                 <p>Bronze benefits like discounts on event tickets</p>
                 <button onclick="document.getElementById('bronze-modal').close()">Close</button>
@@ -77,7 +77,7 @@
                 <h3>Silver Membership</h3>
                 <a href="#" class="membership-link" data-modal="silver-modal">View Benefits</a>
             </div>
-            <dialog id="silver-modal">
+            <dialog id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-desc"></dialog>>
                 <h2>Benefits</h2>
                 <p>Silver benefits like free entry to events all season</p>
                 <button onclick="document.getElementById('silver-modal').close()">Close</button>
@@ -87,7 +87,7 @@
                 <h3>Gold Membership</h3>
                 <a href="#" class="membership-link" data-modal="gold-modal">View Benefits</a>
             </div>
-            <dialog id="gold-modal">
+            <dialog id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-desc"></dialog>>
                 <h2>Benefits</h2>
                 <p>Gold benefits like a spotlight position on our home page </p>
                 <button onclick="document.getElementById('gold-modal').close()">Close</button>
