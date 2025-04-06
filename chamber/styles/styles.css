@@ -238,7 +238,10 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
-
+.grid-view img {
+    max-width: 153px;
+    max-height: 153px;
+}
 .businesses{ /*smh */
     display:flex;
     flex-direction: column;
