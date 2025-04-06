@@ -50,6 +50,8 @@ function displayMembers(members) {
         const img = document.createElement("img");
         img.src = `images/${member.image}`;
         img.alt = member.name;
+        img.width = 153;
+        img.height = 153;
 
         const name = document.createElement("h3");
         name.textContent = member.name;
