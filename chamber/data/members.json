@@ -4,7 +4,7 @@
         "address": "123 Main St, Saratoga, CA",
         "phone": "(123) 456-7890",
         "website": "https://saratogabakery.com",
-        "image": "bakery.jpg",   
+        "image": "bakery.avif",   
         "membership": 3
     },
     {
@@ -12,7 +12,7 @@
         "address": "456 Elm St, Saratoga, CA",
         "phone": "(987) 654-3210",
         "website": "https://techsolutions.com",
-        "image": "tech.jpg",
+        "image": "tech.avif",
         "membership": 2
     },
     {
@@ -20,7 +20,7 @@
         "address": "789 Oak St, Saratoga, CA",
         "phone": "(555) 123-4567",
         "website": "https://greenlandscaping.com",
-        "image": "landscaping.jpg",
+        "image": "landscaping.avif",
         "membership": 1
     },
     {
@@ -28,7 +28,7 @@
         "address": "567 Main St, Saratoga, CA",
         "phone": "(123) 456-7890",
         "website": "https://elmwoodbakery.com",
-        "image": "bakery.jpg",
+        "image": "bakery.avif",
         "membership": 1
     },
     {
@@ -36,7 +36,7 @@
         "address": "234 Pine St, Saratoga, CA",
         "phone": "(987) 654-3210",
         "website": "https://stanfordit.com",
-        "image": "tech2.jpg",
+        "image": "tech2.avif",
         "membership": 3
     },
     {
@@ -44,7 +44,7 @@
         "address": "426 Grove St, Saratoga, CA",
         "phone": "(555) 123-4567",
         "website": "https://arborlandscaping.com",
-        "image": "landscaping2.jpg",
+        "image": "landscaping2.avif",
         "membership": 2
     },
     {
@@ -52,7 +52,7 @@
         "address": "321 Maple St, Saratoga, CA",
         "phone": "(123) 456-7890",
         "website": "https://saratogacoffee.com",
-        "image": "coffee.jpg",
+        "image": "coffee.avif",
         "membership": 1
     }
 ]
