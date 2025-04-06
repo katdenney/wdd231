@@ -143,6 +143,9 @@ nav ul li a:visited {
     top: 10px;
     right: 20px;
     z-index:10;
+    width: 40px; /* does this fix the shift?*/
+    height: 40px; /* does this fix the shift?*/
+    font-size: 1.5rem; /* does this fix the shift?*/
 }
 /* hero */
 .hero img {
