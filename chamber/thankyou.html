@@ -25,8 +25,19 @@
 
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
-    
+
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
     <link rel="stylesheet" href="styles/styles.css">
 
 </head>
+
+<body>
+    <dialog id="thankyou-modal" aria-labelledby="thankyou-modal-title" aria-describedby="thankyou-modal-desc">
+        <h2 id="thankyou-modal-title">Thanks for Joining!</h2>
+        <p id="thankyou-modal-desc">Here's the information you submitted:</p>
+        <ul id="thankyou-details"></ul>
+        <button onclick="document.getElementById('thankyou-modal').close()">Close</button>
+    </dialog>
+    
+</body>
+</html>
