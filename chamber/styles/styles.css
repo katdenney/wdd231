@@ -259,14 +259,19 @@ section {
 .foot-container {
     display: flex;
     flex-direction: row;
-    padding: 5px;
-    justify-content: space-evenly;
-    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
     background-color: var(--background-color);
     margin:20px;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    
+    flex-wrap: wrap;
+}
+.foot-container div {
+    flex:1;
+    text-align: center;
+    margin: 10px;
 }
 @media screen and (max-width: 48em) {
     #menu {
