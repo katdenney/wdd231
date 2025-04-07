@@ -52,6 +52,7 @@ function displayMembers(members) {
         img.alt = member.name;
         img.width = 153;
         img.height = 153;
+        img.loading = "lazy";
 
         const name = document.createElement("h3");
         name.textContent = member.name;
