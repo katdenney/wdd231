@@ -1,7 +1,9 @@
 import { getTimeStamp } from './timestamp.js';
+import { setupModals } from './modal.js';
 
 document.addEventListener('DOMContentLoaded', ()=> {
     getTimeStamp();
+    setupModals();
 });
 document.addEventListener('DOMContentLoaded', () => {
     const params = new URLSearchParams(window.location.search);

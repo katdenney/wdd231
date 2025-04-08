@@ -49,7 +49,7 @@
     </header>
     <main class= "main-content">
         <h2>Become a Member</h2>
-        <section>
+        <section class="section-content">
             <!--non-profit-->
             <div class="membership-card">
                 <h3>Non-profit Membership</h3>
@@ -98,12 +98,12 @@
         </section>
         <section class="join-section"> 
             <form id="form" method= "get" action="thankyou.html">
-                <label>First Name: <input type= "text" name="firstName" autocomplete="given-name" required></label><br>
-                <label>Last Name: <input type= "text" name="lastName" autocomplete="family-name" required></label><br>
-                <label>Title: <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"><br> <!-- no silly characters only letters spaces and hyphens. 7 character min -->
-                <label>Email: <input type="email" name="email" autocomplete="email" placeholder="youremail@email.com" required></label><br>
-                <label>Phone: <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required></label><br>
-                <label>Business: <input type="text" name="business" autocomplete="organization" required></label><br>
+                <label>First Name:<input type= "text" name="firstName" autocomplete="given-name" required></label>
+                <label>Last Name:<input type= "text" name="lastName" autocomplete="family-name" required></label>
+                <label>Title:<input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"><!-- no silly characters only letters spaces and hyphens. 7 character min -->
+                <label>Email:<input type="email" name="email" autocomplete="email" placeholder="youremail@email.com" required></label>
+                <label>Phone:<input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required></label>
+                <label>Business:<input type="text" name="business" autocomplete="organization" required></label>
                 <label>Membership Level:
                     <select name="membership" title="Select your membership level" required>
                         <option value="np">NP Membership</option>
