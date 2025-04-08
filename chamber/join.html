@@ -19,9 +19,8 @@
     <script src="scripts/menutog.js" defer></script> <!-- toggle for nav menu hamburger -->
 
     <script type="module" src="scripts/timestamp.js" defer></script>
-    <script type="module" src="scripts/join.js" defer></script>
     <script type="module" src="scripts/modal.js" defer></script>
-    
+    <script type="module" src="scripts/join.js" defer></script>
    
 
     <!-- Google Fonts -->
@@ -54,41 +53,46 @@
             <!--non-profit-->
             <div class="membership-card">
                 <h3>Non-profit Membership</h3>
-                <a href="#" class="membership-link" data-modal="np-modal">View Benefits</a>
+                <button class="membership-link" data-modal="np-modal">View Benefits</button>
             </div>
-            <dialog id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-desc"></dialog>>
-                <h2>Member Benefits</h2>
-                <p>Member benefits like recieving a newsletter in your inbox</p>
+            <dialog id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-desc">
+                <h2 id="np-modal-title">NP Member Benefits</h2>
+                <p id="np-modal-desc">Member benefits like recieving a newsletter in your inbox</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 <button onclick="document.getElementById('np-modal').close()">Close</button>
             </dialog>
             <!--bronze-->
             <div class="membership-card">
                 <h3>Bronze Membership</h3>
-                <a href="#" class="membership-link" data-modal="bronze-modal">View Benefits</a>
+                <button class="membership-link" data-modal="bronze-modal">View Benefits</button>
             </div>
-            <dialog id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-desc"></dialog>>
-                <h2>Benefits</h2>
-                <p>Bronze benefits like discounts on event tickets</p>
+            <dialog id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-desc">
+                <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
+                <p id="bronze-modal-desc">Bronze benefits like discounts on event tickets</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 <button onclick="document.getElementById('bronze-modal').close()">Close</button>
             </dialog>
             <!--silver-->
             <div class="membership-card">
                 <h3>Silver Membership</h3>
-                <a href="#" class="membership-link" data-modal="silver-modal">View Benefits</a>
+                <button class="membership-link" data-modal="silver-modal">View Benefits</button>
             </div>
-            <dialog id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-desc"></dialog>>
-                <h2>Benefits</h2>
-                <p>Silver benefits like free entry to events all season</p>
+            <dialog id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-desc">
+                <h2 id="silver-modal-title">Silver Membership Benefits</h2>
+                <p id="silver-modal-desc">Silver benefits like free entry to events all season</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 <button onclick="document.getElementById('silver-modal').close()">Close</button>
             </dialog>
             <!--gold-->
             <div class="membership-card">
                 <h3>Gold Membership</h3>
-                <a href="#" class="membership-link" data-modal="gold-modal">View Benefits</a>
+                <button class="membership-link" data-modal="gold-modal">View Benefits</button>
             </div>
-            <dialog id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-desc"></dialog>>
-                <h2>Benefits</h2>
-                <p>Gold benefits like a spotlight position on our home page </p>
+            <!--gold dialog box -->
+            <dialog id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-desc">
+                <h2 id="gold-modal-title">Gold Membership Benefits</h2>
+                <p id="gold-modal-desc">Gold benefits like a spotlight position on our home page </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                 <button onclick="document.getElementById('gold-modal').close()">Close</button>
             </dialog>
         </section>

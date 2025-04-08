@@ -1,32 +1,32 @@
-import { setupModals } from './modal.js';
 import { getTimeStamp } from './timestamp.js';
+
 document.addEventListener('DOMContentLoaded', ()=> {
-    setupModals();
     getTimeStamp();
-    setupFormSubmission();
 });
-function setupFormSubmission() {
-    const form = document.getElementById('form');
-    const thankYouModal = document.getElementById('thankyou-modal');
+document.addEventListener('DOMContentLoaded', () => {
+    const params = new URLSearchParams(window.location.search);
     const thankYouDetails = document.getElementById('thankyou-details');
-
-    form.addEventListener('submit', (e) => {
-        e.preventDefault(); // Prevent default form submission
-
-        // Extract form data
-        const formData = new FormData(form);
-        thankYouDetails.innerHTML = ''; // Clear previous data
-
-        // Populate the modal with form data
-        formData.forEach((value, key) => {
-            const listItem = document.createElement('li');
-            listItem.innerHTML = `<strong>${key}:</strong> ${value}`;
-            thankYouDetails.appendChild(listItem);
+  
+    params.forEach((value, key) => {
+      const li = document.createElement('li');
+      if (key === 'timestamp') {
+        const date = new Date(value);
+        const formatted = date.toLocaleString(undefined, {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: 'numeric',
+          minute: '2-digit',
+          hour12: true,
         });
-
-        // Show the modal
-        if (thankYouModal && typeof thankYouModal.showModal === 'function') {
-            thankYouModal.showModal();
-        }
+        li.innerHTML = `<strong>${key}:</strong> ${formatted}`;
+      } else {
+        li.innerHTML = `<strong>${key}:</strong> ${decodeURIComponent(value)}`;
+      }
+  
+      thankYouDetails.appendChild(li);
     });
-}
+});
+
+     
+   

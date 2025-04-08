@@ -13,13 +13,9 @@
     <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
 
     <link rel="icon" href="images/favicontree.ico" type="image/x-icon"> <!-- favicon -->
-    <title>Join the Saratoga Chamber of Commerce</title>
+    <title>Thank You for Joining the Saratoga Chamber of Commerce</title>
 
-    <script src="scripts/date.js" defer></script> <!--date for footer -->
-
-    <script type="module" src="scripts/timestamp.js" defer></script>
     <script type="module" src="scripts/join.js" defer></script>
-    <script type="module" src="scripts/modal.js" defer></script>
     
    
 
@@ -32,12 +28,12 @@
 </head>
 
 <body>
-    <dialog id="thankyou-modal" aria-labelledby="thankyou-modal-title" aria-describedby="thankyou-modal-desc">
-        <h2 id="thankyou-modal-title">Thanks for Joining!</h2>
-        <p id="thankyou-modal-desc">Here's the information you submitted:</p>
-        <ul id="thankyou-details"></ul>
-        <button onclick="document.getElementById('thankyou-modal').close()">Close</button>
-    </dialog>
+    
+    <h2 id="thankyou-modal-title">Thanks for Joining!</h2>
+    <p id="thankyou-modal-desc">Here's the information you submitted:</p>
+    <ul id="thankyou-details"></ul>
+    <button onclick="window.location.href='index.html'">Close</button>
+    <script type="module" src="scripts/thankyou.js" defer></script>
     
 </body>
 </html>
