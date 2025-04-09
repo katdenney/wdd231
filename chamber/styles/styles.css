@@ -37,15 +37,6 @@
     --border-radius: 10px;
     --background-color:rgba(255, 255, 255, 0.65);
 }
-#box-shadow {
-    box-shadow: var(--box-shadow);
-    border-radius: var(--border-radius);
-}
-
-#bg-semi-transparent {
-    background-color: var(--background-color);
-}
-
 body {
     max-width: 100%;
     overflow-x: hidden; /* new Preventing horizontal scrolling */
@@ -53,6 +44,7 @@ body {
 /* Header and nav*/
 .top-header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
     max-height: 200px;
@@ -113,10 +105,14 @@ nav ul li a:visited {
 /* menu */
 #menu {
     display : flex;
-    justify-content: space-between;
     flex-direction: row;
+    justify-content: space-between;
     margin: 20px;
     list-style-type: none; /*this got rid of bullet points*/
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
+    z-index: 9;
+    border-radius: var(--border-radius);
 }
 #menu li {
     margin:10px;
@@ -132,7 +128,6 @@ nav ul li a:visited {
  #menu-toggle {
     display: block;
     cursor: pointer;
-    font-size: 5rem;
     background: none;
     border: none;
     color: var(--primary-color);
@@ -147,12 +142,13 @@ nav ul li a:visited {
 /* hero */
 .hero img {
     width: 100%;
-    height: 100%;
+    height: auto;
     object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
+    
 }
 .hero-text {
     position: relative;
@@ -176,7 +172,7 @@ nav ul li a:visited {
     transition: background-color 0.3s ease-in-out;
     animation: bounce 1.3s ease-in-out infinite;
 }
-.hero-button:hover {
+button:hover,.hero-button:hover {
     background: #FEF9EF;
 }
 /* main+ sections */
@@ -239,6 +235,11 @@ section {
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
 }
+.list-view{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .main-content2{
     background-color: var(--primary-color);
     text-align: center;
@@ -260,8 +261,10 @@ section {
     color: var(--primary-color);
 }
 .businesses img{
-    max-width: 153px;
-    max-height: 153px;
+    max-width: 100%;
+    justify-content: center;
+    height: auto;
+    display: block;
 }
 dialog {
     padding: 20px;
@@ -274,9 +277,6 @@ dialog button{
     box-shadow: var(--box-shadow);
     animation: fadeIn 5s ease-in;
     border-radius: var(--border-radius);  
-}
-button:hover{
-    background: #FEF9EF;
 }
 .section-content{
     display: grid;
@@ -312,24 +312,16 @@ button:hover{
 @media screen and (max-width: 600px) {
     #menu {
         display: none;
-        flex-direction: column;
-        background-color: var(--background-color);
-        position: absolute;
-        top: 80px;
-        right: 20px;
-        padding: 10px;
-        border-radius: 10px;
-        box-shadow: var(--box-shadow);
-        z-index: 9;
     }
     header h1{
         display:none;
     }
     .top-header{
-        grid-area: 1/ span 6;/* new this might have to go */
-    }
-    section{
-        grid-area: span;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center ;
     }
     #menu.show {
         display: flex;
@@ -340,8 +332,8 @@ button:hover{
         text-align: center;
     }
     .main-content {
-        /*grid-template-columns: 1fr;*/
-        grid-area: 3/ span 6;/* new this might have to go */
+        grid-template-columns: 1fr;
+       
     }
     .main-content2 {
         grid-template-columns: 1fr;
@@ -366,19 +358,14 @@ button:hover{
 @media only screen and (min-width: 600px) {
     #menu{
         display: flex;
-        flex-direction: space-between;
+        flex-direction: row;
+        justify-content: space-between;
     }
-    .foot-container{
-        grid-area: 4/ span 6;
-    }
-
 }
 @media only screen and (min-width: 768px) {
-    .foot-container{
-        grid-area: 3/ span 6;
-    }
     #menu{
         display: flex;
-        flex-direction: space-between;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
