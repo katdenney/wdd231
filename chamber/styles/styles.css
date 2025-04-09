@@ -186,6 +186,8 @@ button:hover,.hero-button:hover {
     border-radius: 10px;
     align-items: stretch;
     background-color: var(--primary-color);
+    max-width: 100%;
+    overflow-x: hidden; 
 }
 section {
     padding: 20px;
@@ -193,6 +195,8 @@ section {
     background-color: var(--background-color);
     border-radius: 10px;
     box-shadow: var(--box-shadow);
+    max-width: 100%;
+    overflow-x: hidden; 
 }
 .main-content h2 {
     grid-column: 1/-1;
@@ -309,12 +313,21 @@ dialog button{
     text-align: center;
     margin: 10px;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 100px) {
     #menu {
         display: none;
+        flex-direction: column;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        z-index: 9;
     }
-    header h1{
-        display:none;
+    #menu.show {
+        display: flex;/*this should show menu*/
     }
     .top-header{
         display: flex;
@@ -323,9 +336,7 @@ dialog button{
         align-items: center;
         justify-content: center ;
     }
-    #menu.show {
-        display: flex;
-    }
+    
     #menu li {
         margin: 10px 0;
         width: 100%;
@@ -352,20 +363,18 @@ dialog button{
         margin: 10px 0;
     }
     .view-toggle{
-        display: none;
+        display: none;/*this is for directory only*/
     }
 }
-@media only screen and (min-width: 600px) {
-    #menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
+
+@media only screen and (min-width: 768px){
+    nav{display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+    border-radius: 20px;
+    background-color: var(--background-color);
+    box-shadow: var(--box-shadow);
 }
-@media only screen and (min-width: 768px) {
-    #menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-    }
 }
