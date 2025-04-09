@@ -94,21 +94,42 @@
         </section>
         <section class="join-section"> 
             <form id="form" method= "get" action="thankyou.html">
-                <label>First Name:<input type= "text" name="firstName" autocomplete="given-name" required></label>
-                <label>Last Name:<input type= "text" name="lastName" autocomplete="family-name" required></label>
-                <label>Title:<input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"><!-- no silly characters only letters spaces and hyphens. 7 character min -->
-                <label>Email:<input type="email" name="email" autocomplete="email" placeholder="youremail@email.com" required></label>
-                <label>Phone:<input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required></label>
-                <label>Business:<input type="text" name="business" autocomplete="organization" required></label>
+                <label>First Name:
+                    <input type= "text" name="firstName" autocomplete="given-name" required>
+                </label>
+
+                <label>Last Name:
+                    <input type= "text" name="lastName" autocomplete="family-name" required>
+                </label>
+
+                <label>Title:
+                    <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"><!-- no silly characters only letters spaces and hyphens. 7 character min -->
+                </label>
+
+                <label>Email:
+                    <input type="email" name="email" autocomplete="email" placeholder="youremail@email.com" required>
+                </label>
+
+                <label>Phone:
+                    <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required>
+                </label>
+
+                <label>Business:
+                    <input type="text" name="business" autocomplete="organization" required>
+                </label>
+
                 <label>Membership Level:
                     <select name="membership" title="Select your membership level" required>
                         <option value="np">NP Membership</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
                         <option value="gold">Gold Membership</option>
-                    </select><br>
+                    </select>
                 </label>
-                <label>Description: <textarea name="description" title="Describe your organization"></textarea></label><br>
+
+                <label>Description: 
+                    <textarea name="description" title="Describe your organization"></textarea>
+                </label><br>
                 <input type="hidden" id="timestamp" name="timestamp"><br>
                 <input type="submit" value="Join Us"><br>
             </form>
