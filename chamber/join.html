@@ -93,6 +93,7 @@
             </dialog>
         </section>
         <section class="join-section"> 
+            <h2>Tell us about yourself</h2>
             <form id="form" method= "get" action="thankyou.html">
                 <label>First Name:
                     <input type= "text" name="firstName" autocomplete="given-name" required>
@@ -111,7 +112,7 @@
                 </label>
 
                 <label>Phone:
-                    <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234"required>
+                    <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234" required>
                 </label>
 
                 <label>Business:
@@ -120,6 +121,7 @@
 
                 <label>Membership Level:
                     <select name="membership" title="Select your membership level" required>
+                        <option value=""disabled selected>Select a membership:</option>
                         <option value="np">NP Membership</option>
                         <option value="bronze">Bronze Membership</option>
                         <option value="silver">Silver Membership</option>
