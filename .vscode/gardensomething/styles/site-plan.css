@@ -39,36 +39,38 @@ nav ul li a.active {
     border-radius: 5px;
 }
 nav ul li a:hover {
-    background: color #ff331f ;
-    color: #FEF9EF;
+    background-color: #ff331f ;
     border-radius: 5px;
 }
 nav ul li a:visited {
     background: color #077453;
+    color: #FEF9EF;
 }
 body {
+    text-align: center;
     overflow-x: hidden;
     max-width: 100%;
     font-weight: 400;
     background-color: #FEF5EF;
+    padding: 60px;
 }
 h2 {
     background-color: #0094c6;
     text-align: center;
-    padding: 5px;
-    margin-bottom: 5px;
+    padding: 10px;
+    margin-bottom: 40px;
     border-radius: 5px;
     box-shadow: #011936 2px 2px 5px;
 }
-#wireframe {
+.wireframe {
     display: flex;
-    margin: 0 auto;
-    width: 50%;
-    max-width: 600px;
-    padding: 20px;
+    flex-direction: column;
+    justify-content: space-around;
     border-radius: 10px;
+    padding:20px;
     box-shadow: #011936 2px 2px 5px;
 }
-#wireframe img {
-    justify-items: center;
+.wireframe img {
+    max-width: 400px;
+    height: auto;
 }
