@@ -1,0 +1,74 @@
+/* This is the CSS file for the site plan page */
+* {
+    color:#130D01;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+}
+:root {
+    --primary-color: #0094c6;
+    --secondary-color: #ff331f;
+    --third-color:#077453;
+    --text-color: #0d0106;
+    --text-shadow: #0d0106 1px 1px 2px;
+    --box-shadow: #0d0106 2px 2px 5px;
+    --border-radius: 10px;
+    --background-color:rgba(254, 245, 239, 0.65);
+}
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none; /*this got rid of bullet points*/
+    padding: 10px 0;
+    width: 100%;
+    background-color: #0094c6;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: #011936 2px 2px 5px;
+    font-weight: 400;
+}
+#menu li {
+    margin: 0 10px;
+    padding-right: 20px;
+}
+nav ul li a.active {
+    background-color: #077453;
+    color:#FEF5EF;
+    border-radius: 5px;
+}
+nav ul li a:hover {
+    background: color #ff331f ;
+    color: #FEF9EF;
+    border-radius: 5px;
+}
+nav ul li a:visited {
+    background: color #077453;
+}
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+    font-weight: 400;
+    background-color: #FEF5EF;
+}
+h2 {
+    background-color: #0094c6;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    box-shadow: #011936 2px 2px 5px;
+}
+#wireframe {
+    display: flex;
+    margin: 0 auto;
+    width: 50%;
+    max-width: 600px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: #011936 2px 2px 5px;
+}
+#wireframe img {
+    justify-items: center;
+}
