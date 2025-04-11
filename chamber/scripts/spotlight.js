@@ -32,6 +32,7 @@ function displaySpotlight(members) {
         const img = document.createElement("img");
         img.src = `images/${member.image}`;
         img.alt = member.name;
+        loading = "lazy";
         card.appendChild(img);
 
         //name
