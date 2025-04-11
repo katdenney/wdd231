@@ -1,0 +1,17 @@
+.discover-main {
+    display: grid;
+    grid-template-areas:
+      "cards"
+      "visit";
+  }
+  
+  .cards-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    grid-area: cards;
+  }
+  
+  .visit-message {
+    grid-area: visit;
+  }

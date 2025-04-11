@@ -1,0 +1,8 @@
+.discover-main {
+    grid-template-areas: "visit cards";
+    grid-template-columns: 1fr 2fr;
+  }
+  .card img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+  }

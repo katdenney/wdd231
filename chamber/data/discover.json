@@ -3,48 +3,48 @@
       "name": "Saratoga Historical Museum",
       "address": "20450 Saratoga-Los Gatos Rd, Saratoga, CA 95070",
       "description": "Explore the rich history of Saratoga and its surrounding communities.",
-      "image": "images/museum.webp"
+      "image": "museum.webp"
     },
     {
       "name": "Hakone Gardens",
       "address": "21000 Big Basin Way, Saratoga, CA 95070",
       "description": "A beautiful and peaceful Japanese garden in the heart of the city.",
-      "image": "images/hgardens.webp"
+      "image": "hgardens.webp"
     },
     {
         "name": "Heritage Orchard Park",
         "address": "13650 Saratoga Ave, Saratoga, CA 95070",
         "description": "The Heritage Orchard was designated as a City park in 1984 in recognition of the City's agricultural heritage.",
-        "image": "images/orchard.webp"
+        "image": "orchard.webp"
     },
     {
         "name": "Villa Montalvo Lookout Point",
         "address": "South Orchard Creek Trail Loop, Saratoga, CA 95070",
         "description": "Beautiful overlook.",
-        "image": "images/hikingtrail.webp"
+        "image": "hikingtrail.webp"
     },
     {
         "name": "Farmers Market at West Valley College",
         "address": "14000 Fruitvale Ave, Saratoga, CA 95070",
         "description": "The Saratoga Certified Farmers Market offers seasonal fruits and vegetables from Santa Clara County year-round in the parking lot.",
-        "image": "images/market.webp"
+        "image": "market.webp"
     },
     {
         "name": "Wildwood Park",
         "address": "20764 4th st, Saratoga, CA 95070",
         "description": "Mature trees fill this public park also offering picnic tables & a children's playground",
-        "image": "images/park.webp"
+        "image": "park.webp"
     },
     {
         "name": "Montalvo Arts Center",
         "address": "15400 Montalvo Rd, Saratoga, CA 95070",
         "description": "Performing arts complex with indoor & outdoor stages, plus landscaped gardens & walking trails.",
-        "image": "images/artscenter.webp"
+        "image": "artscenter.webp"
     },
     {
         "name": "Skyline to Sea Trail Head",
         "address": "Big Basin Way to Beekhuis Road, Saratoga, CA 95070",
         "description": "Mature trees fill this beautiful trail",
-        "image": "images/skylineseatrail.webp"
+        "image": "skylineseatrail.webp"
     }
   ]
