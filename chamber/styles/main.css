@@ -4,14 +4,17 @@
       "cards"
       "visit";
   }
-  
   .cards-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
     grid-area: cards;
   }
-  
+  .cards-container img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+  }
   .visit-message {
     grid-area: visit;
   }

@@ -20,17 +20,20 @@
    
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap">
 
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 640px)">
 
 </head>
 <body>
     <header>
         <section class="top-header">
             <h1>Discover</h1>
-            <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
+            <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" max-width="200" max-height="200" class="logo">
             <button id="menu-toggle" aria-label="Toggle menu">
                 &#9776;    
             </button>
