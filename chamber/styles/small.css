@@ -62,7 +62,7 @@
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
         gap: 1rem;
-        grid-area: "cards";
+        grid-area: cards;
         width: 100%;
         padding: 10px;
     }
@@ -72,7 +72,7 @@
         object-fit: cover;
     }
     .visit-message {
-        grid-area: "visit";
+        grid-area: visit;
     }
     .foot-container {
         flex-direction: column; 
