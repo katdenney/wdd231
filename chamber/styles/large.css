@@ -1,11 +1,25 @@
 /* Large screen styles: 1025px+ */
 @media (min-width: 1025px) {
+    .main-content2{
+        justify-self: center;
+        background-color: var(--primary-color);
+        text-align: center;
+        box-shadow: var(--box-shadow);
+        min-height: 300px;
+        overflow-y: hidden;
+        max-width: 7000px;
+    }
     .cards-container {
-      grid-template-columns: repeat(4, 1fr);
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 1rem;
+        grid-area: "cards";
+        width: 100%;
+        padding: 10px;
     }
     .cards-container img {
-        width: 300px;
-        height: 200px;
+        width: 100%;
+        height: auto;
         object-fit: cover;
     }
     .hero {

@@ -1,13 +1,12 @@
 /* Medium screen styles: 641px–1024px */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
     nav{display: flex;
+        min-height: 60px;
         flex-direction: row;
         justify-content: flex-end;
         align-items: center;
         margin: 20px;
         border-radius: 20px;
-        background-color: var(--background-color);
-        box-shadow: var(--box-shadow);
     }
     #menu {
         display: none;
@@ -41,14 +40,23 @@
     .discover-section {
     grid-template-areas: "visit cards";
     grid-template-columns: 1fr 2fr;
-    }
-    .cards-container img {
-        width: 300px;
-        height: 200px;
-        object-fit: cover;
+    text-align: center;
     }
     .card img:hover {
         transform: scale(1.05);
         transition: transform 0.3s ease-in-out;
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 1rem;
+        grid-area: "cards";
+        width: 100%;
+        padding: 10px;
+    }
+    .cards-container img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
     }
 }
