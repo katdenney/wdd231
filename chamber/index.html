@@ -29,10 +29,15 @@
 
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
     <link rel="stylesheet" href="styles/styles.css"> 
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
     
 
 </head>
 <body>
+    <!-- preload hero -->
+    <link rel="preload" as="image" href="images/herosaratoga.avif">
     <header>
         <section class="top-header">
             <h1>Satatoga Chamber of Commerce </h1>
@@ -50,9 +55,10 @@
             </nav>
         </section>
         <section class="hero">
-            <img src="images/hero.avif" alt="Welcome to Saratoga Chamber of Commerce">
+            <h1>Welcome to the Saratoga Chamber of Commerce</h1>
+            <img src="images/herosaratoga.avif" alt="Welcome to Saratoga Chamber of Commerce">
             <div class="hero-text">
-                <h1>Welcome to the Saratoga Chamber of Commerce</h1>
+                
                 <p>Supporting local businesses and community growth.</p>
                 <a href="join.html" class="hero-button">Join Now</a>
             </div>

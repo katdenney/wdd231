@@ -26,10 +26,14 @@
 
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/medium.css" media="(min-width: 640px)">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
 
 </head>
 <body>
+    <!-- preload hero -->
+    <link rel="preload" as="image" href="images/herosaratoga.avif">
     <header>
         <section class="top-header">
             <h1>Discover</h1>
@@ -46,18 +50,19 @@
                 </ul> 
             </nav>
         </section>
+        <section class="hero">
+            <img src="images/herosaratoga.avif" alt="Welcome to Saratoga Chamber of Commerce">
+            <h1>Explore Our City</h1>
+            <div>
+                <aside id="visit-message"></aside>
+            </div>
+        </section>
     </header>
-    <main class= "discover-main">
+    <main class="main-content2">
         <h1>Discover Satatoga </h1>
-        <section 
-            class="cards-container">
-        </section>
         
-        <section>
-            <aside id="visit-message"></aside>
-        </section>
-        <section> 
-
+        <section class= "discover-section">
+            <div class="cards-container"></div>
         </section>
             
     </main>

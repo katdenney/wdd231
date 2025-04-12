@@ -1,0 +1,75 @@
+/* Small screen styles: 320px–640px */
+@media screen and (max-width: 640px) {
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        z-index: 9;
+    }
+    #menu.show {
+        display: flex;/*this should show menu*/
+    }
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center ;
+    }
+    
+    #menu li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+    .main-content {
+        grid-template-columns: 1fr;
+       
+    }
+    .main-content2 {
+        grid-template-columns: 1fr;
+    }
+    .grid-view {
+        grid-template-columns: 1fr;
+    }
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .hero-button, .view-toggle button {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .view-toggle {
+        display: none;/*this is for directory only*/
+    }
+    /*^^^paste from orig file*/
+    .discover-section {
+    display: grid;
+    grid-template-areas:
+      "cards"
+      "visit";
+    }
+    .cards-container {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 1rem;
+        grid-area: cards;
+    }
+    .cards-container img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .visit-message {
+        grid-area: visit;
+    }
+}

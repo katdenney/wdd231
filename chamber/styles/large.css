@@ -1,3 +1,4 @@
+/* Large screen styles: 1025px+ */
 @media (min-width: 1025px) {
     .cards-container {
       grid-template-columns: repeat(4, 1fr);
@@ -6,5 +7,36 @@
         width: 300px;
         height: 200px;
         object-fit: cover;
-      }
+    }
+    .hero {
+        flex-direction: column;
+        justify-content: stretch;
+        align-items: center;
+        text-align: left;
+    }
+    .hero h1 {
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .topheader {
+        display: flex;
+        
+    }
+    .topheader h1 {
+        order: 2;
+    }
+    #menu{
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px;
+        list-style-type: none; /*this got rid of bullet points*/
+        background-color: var(--background-color);
+        box-shadow: var(--box-shadow);
+        z-index: 9;
+        border-radius: var(--border-radius);
+        width: max-content;
+        min-width: 100px;
+        right: 10px;
+    }
+
   }

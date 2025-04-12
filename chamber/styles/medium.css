@@ -1,13 +1,54 @@
-.discover-main {
+/* Medium screen styles: 641px–1024px */
+@media screen and (min-width: 641px) and (max-width: 1024px) {
+    nav{display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: center;
+        margin: 20px;
+        border-radius: 20px;
+        background-color: var(--background-color);
+        box-shadow: var(--box-shadow);
+    }
+    #menu {
+        display: none;
+        flex-direction: column;
+        background-color: var(--background-color);
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 10px;
+        box-shadow: var(--box-shadow);
+        z-index: 9;
+    }
+    #menu.show {
+        display: flex;/*this should show menu*/
+    }
+    #menu-toggle {
+        display: flex;
+        cursor: pointer;
+        background: none;
+        border: none;
+        color: var(--primary-color);
+        position: absolute;
+        top: 10px;
+        right: 20px;
+        z-index: 11;
+        width: 40px; /* does this fix the shift?*/
+        height: 40px; /* does this fix the shift?*/
+        font-size: 1.5rem; /* does this fix the shift?*/
+    }
+    .discover-section {
     grid-template-areas: "visit cards";
     grid-template-columns: 1fr 2fr;
-  }
-  .cards-container img {
-    width: 300px;
-    height: 200px;
-    object-fit: cover;
-  }
-  .card img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease-in-out;
-  }
+    }
+    .cards-container img {
+        width: 300px;
+        height: 200px;
+        object-fit: cover;
+    }
+    .card img:hover {
+        transform: scale(1.05);
+        transition: transform 0.3s ease-in-out;
+    }
+}
