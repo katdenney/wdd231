@@ -3,48 +3,56 @@
       "name": "Saratoga Historical Museum",
       "address": "20450 Saratoga-Los Gatos Rd, Saratoga, CA 95070",
       "description": "Explore the rich history of Saratoga and its surrounding communities.",
-      "image": "museum.webp"
+      "image": "museum.webp",
+      "link":"https://www.saratogahistory.com/"
     },
     {
       "name": "Hakone Gardens",
       "address": "21000 Big Basin Way, Saratoga, CA 95070",
       "description": "A beautiful and peaceful Japanese garden in the heart of the city.",
-      "image": "hgardens.webp"
+      "image": "hgardens.webp",
+      "link":"https://www.hakone.com/"
     },
     {
         "name": "Heritage Orchard Park",
         "address": "13650 Saratoga Ave, Saratoga, CA 95070",
         "description": "The Heritage Orchard was designated as a City park in 1984 in recognition of the City's agricultural heritage.",
-        "image": "orchard.webp"
+        "image": "orchard.webp",
+        "link":"https://www.saratoga.ca.us/489/Heritage-Orchard"
     },
     {
         "name": "Villa Montalvo Lookout Point",
         "address": "South Orchard Creek Trail Loop, Saratoga, CA 95070",
         "description": "Beautiful overlook.",
-        "image": "hikingtrail.webp"
+        "image": "hikingtrail.webp",
+        "link":"https://www.alltrails.com/trail/us/california/villa-montalvo-trail"
     },
     {
         "name": "Farmers Market at West Valley College",
         "address": "14000 Fruitvale Ave, Saratoga, CA 95070",
         "description": "The Saratoga Certified Farmers Market offers seasonal fruits and vegetables from Santa Clara County year-round in the parking lot.",
-        "image": "market.webp"
+        "image": "market.webp",
+        "link":"https://www.cafarmersmkts.com/saratoga-farmers-market"
     },
     {
         "name": "Wildwood Park",
         "address": "20764 4th st, Saratoga, CA 95070",
         "description": "Mature trees fill this public park also offering picnic tables & a children's playground",
-        "image": "park.webp"
+        "image": "park.webp",
+        "link":"https://saratoga.ca.us/601/Wildwood-Park"
     },
     {
         "name": "Montalvo Arts Center",
         "address": "15400 Montalvo Rd, Saratoga, CA 95070",
         "description": "Performing arts complex with indoor & outdoor stages, plus landscaped gardens & walking trails.",
-        "image": "artscenter.webp"
+        "image": "artscenter.webp",
+        "link":"https://montalvoarts.org/"
     },
     {
         "name": "Skyline to Sea Trail Head",
         "address": "Big Basin Way to Beekhuis Road, Saratoga, CA 95070",
         "description": "Mature trees fill this beautiful trail",
-        "image": "skylineseatrail.webp"
+        "image": "skylineseatrail.webp",
+        "link":"https://www.redwoodhikes.com/BigBasin/S-to-S.html"
     }
   ]

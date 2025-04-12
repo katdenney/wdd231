@@ -13,7 +13,7 @@ export async function loadCards() {
           <figure><img src="images/${item.image}" alt="${item.name}" width="300" height="200" loading="lazy"></figure>
           <address>${item.address}</address>
           <p>${item.description}</p>
-          <button>Learn More</button>`;
+          <a href="${item.link}" class="learn-more-button">Learn More</a>`;
         container.appendChild(card);
       });
     } catch (error) {
