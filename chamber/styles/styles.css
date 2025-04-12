@@ -27,6 +27,12 @@
     color:#130D01;
     font-weight: 400;
 }
+.logo {
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+  }
 /* reuse */
 :root {
     --primary-color: #127d72;
@@ -103,21 +109,7 @@ nav ul li a:hover {
 nav ul li a:visited {
     background-color: var(--primary-color);
 }
-/* menu 
-display: none;
-    flex-direction: column; 
-    position: absolute;
-    background-color: var(--background-color);
-    display: none;
-    flex-direction: column;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: var(--box-shadow);*/
-    /*display : flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin: 20px;
-    list-style-type: none;*/
+/* menu */
 #menu {
     display: flex;
     flex-direction: row;
