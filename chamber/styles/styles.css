@@ -70,7 +70,7 @@ body {
     box-shadow: var(--box-shadow);
 }
 nav {
-    display: flex;
+    display: flex;/*this is where im leaving off is this where the issue is?*/
     min-height: 60px;
     flex-direction: row;
     justify-content: flex-end;
