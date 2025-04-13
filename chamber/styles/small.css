@@ -1,5 +1,12 @@
-/* Small screen styles: 320px–640px */
+/* CHAMBER!!!!!!!!!!!!!Small screen styles: 320px–640px */
 @media screen and (max-width: 640px) {
+    .top-header{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 1rem;
+        align-items: center;
+        justify-content: center ;
+    }
     #menu {
         display: none;
         flex-direction: column;
@@ -15,14 +22,6 @@
     #menu.show {
         display: flex;/*this should show menu*/
     }
-    .top-header{
-        display: flex;
-        flex-wrap: wrap;
-        gap: 1rem;
-        align-items: center;
-        justify-content: center ;
-    }
-    
     #menu li {
         margin: 10px 0;
         width: 100%;
