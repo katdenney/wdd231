@@ -10,7 +10,7 @@ export async function loadCards() {
         card.classList.add('card');
         card.innerHTML = `
           <h2>${item.name}</h2>
-          <figure><img src="images/${item.image}" alt="${item.name}" width="300" height="200" loading="lazy"></figure>
+          <figure><img src="images/${item.image}" alt="${item.name}" width=200 height=200 loading="lazy"></figure>
           <address>${item.address}</address>
           <p>${item.description}</p>
           <a href="${item.link}" class="learn-more-button">Learn More</a>`;

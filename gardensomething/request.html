@@ -35,11 +35,11 @@
 
 </head>
 <body>
-    <div>
+    <div class="page-wrapper">
         <header>
             <section class="top-header">
-                <h1>Join the Satatoga Chamber of Commerce </h1>
-                <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
+                <h1>Request a quote from Garden Something</h1>
+                <img src="images/logo.webp" alt="Garden Something Logo" class="logo">
                 <button id="menu-toggle" aria-label="Toggle menu">
                     &#9776;
                 </button>
@@ -54,8 +54,9 @@
                 </nav>
             </section>
         </header>
+        <!--MOVE THIS TOMORROW WHERE IT MAKES SENSE?-->
         <main class= "join-section">
-            <h2>Become a Member</h2>
+            <h2>View Zones</h2>
             <section class="membership-content">
                 <!--non-profit-->
                 <div class="membership-card">
@@ -130,7 +131,7 @@
                         <input type="text" name="business" autocomplete="organization" required>
                     </label>
 
-                    <label>Membership Level:
+                    <label>Planting Zone:
                         <select name="membership" title="Select your membership level" required>
                             <option value="" disabled selected>Select a membership:</option>
                             <option value="np">NP Membership</option>
@@ -141,10 +142,10 @@
                     </label>
 
                     <label>Description: 
-                        <textarea name="description" title="Describe your organization"></textarea>
+                        <textarea name="description" title="Describe your request"></textarea>
                     </label><br>
                     <input type="hidden" id="timestamp" name="timestamp"><br>
-                    <input type="submit" value="Join Us"><br>
+                    <input type="submit" value="Request Quote"><br>
                 </form>
             </section>
         </main>

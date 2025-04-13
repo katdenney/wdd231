@@ -32,7 +32,7 @@
     max-height: 200px;
     height: auto;
     width: auto;
-  }
+}
 /* reuse */
 :root {
     --primary-color: #127d72;
@@ -76,11 +76,11 @@ body {
     box-shadow: var(--box-shadow);
 }
 h1 {
-    font-size: 2.5rem; /* Set a consistent font size */
-    line-height: 1.2; /* Ensure consistent line height */
-    margin: 20px 0; /* Add consistent margins */
-    padding: 0; /* Avoid unexpected padding */
-    text-align: center; /* Center-align the text */
+    font-size: 2.5rem; /* consistent font size */
+    line-height: 1.2; /* consistent line height */
+    margin: 20px 0; /* consistent margins */
+    padding: 0; /* no unexpected padding */
+    text-align: center; /* Center the text */
 }
 .cards-container {
     display: grid;

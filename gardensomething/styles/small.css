@@ -1,0 +1,12 @@
+/* Small screen styles: 320px–640px */
+@media screen and (max-width: 640px) {
+    .hero {
+        height: 50vh;
+        flex-direction: column;
+        text-align: center;
+      }
+    
+      .hero-content h1 {
+        font-size: 1.5rem;
+      }
+}

@@ -3,56 +3,56 @@
       "name": "Baker Creek Heirloom Seed Company",
       "address": "2278 Baker Creek Rd, Mansfield, MO 65704",
       "description": "Diverse selection of heirloom seeds packed with flavor and beauty.",
-      "image": "download.jpg",
+      "image": "download.jpeg",
       "link":"https://www.rareseeds.com/"
     },
     {
       "name": "Peaceful Valley Seeds",
       "address": "125 Clydesdale Ct. Grass Valley, CA 95945",
       "description": "Sustainable, Regenerative & Organic Since 1976",
-      "image": "download.jpg",
+      "image": "download.jpeg",
       "link":"https://www.groworganic.com/"
     },
     {
         "name": "Johnny's Selected Seeds",
         "address": "955 Benton Ave, Winslow, ME 04901",
         "description": "Helping families, friends, and communities to feed one another by providing superior seeds, tools, information, and service.",
-        "image": "johnys.jpg",
+        "image": "johnys.jpeg",
         "link":"https://www.johnnyseeds.com/"
     },
     {
         "name": "Renee's Garden",
         "address": "6060 Graham Hill Rd. Felton, CA 95018",
         "description": "Spread Sunshine with our Easy to Grow Scatter Garden Seeds.",
-        "image": "download.jpg",
+        "image": "download.jpeg",
         "link":"https://www.reneesgarden.com/"
     },
     {
         "name": "Eden Brothers",
         "address": "2099 Brevard Rd., Arden, NC 28704",
         "description": "Shop our garden essential sale with vegetable, flower, herb seeds & flower bulbs.",
-        "image": "download.jpg",
+        "image": "download.jpeg",
         "link":"https://www.edenbrothers.com/"
     },
     {
         "name": "Row 7 Seed Company",
         "address": "11 Spring Street, Studio 2K, Newburgh, NY 12550",
         "description": "A group of chefs, farmers, plant breeders and plant eaters writing a new recipe for delicious food that begins with seed.",
-        "image": "download.jpg",
+        "image": "download.jpeg",
         "link":"https://www.row7seeds.com/"
     },
     {
         "name": "Botanical Interests",
         "address": "660 Compton St, Broomfield, CO 80020",
         "description": "Non-GMO Project Verified Seeds.",
-        "image": "download.jpg",
+        "image": "download.jpeg",
         "link":"https://www.botanicalinterests.com/"
     },
     {
         "name": "High Mowing Organic Seeds",
         "address": "76 Quarry Road Wolcott, VT 05680",
         "description": "We offer 100% certified organic seed, bred to perform best in organic conditions with robust, vigorous genetics and modern disease resistances.",
-        "image": "download.jpg",
+        "image": "download.jpeg",
         "link":"https://www.highmowingseeds.com/"
     }
   ]

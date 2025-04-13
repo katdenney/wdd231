@@ -4,6 +4,7 @@
     --secondary-color: #cc1d6f;
     --third-color:#077453;
     --text-color: #0d0106;
+    --light-color: #fefefe;
     --text-shadow: #0d0106 1px 1px 2px;
     --box-shadow: #0d0106 2px 2px 5px;
     --border-radius: 10px;
@@ -22,6 +23,8 @@ html, body {
     height: 100%;
     margin: 0;
     padding: 0;
+    background-color: var(--background-color);/*making everything background yellow*/
+    overflow-x: hidden; /*this might make things weird not sure yet*/
 }
 /*100vh is 100% of the viewport's height*/
 .page-wrapper {
@@ -32,6 +35,140 @@ html, body {
 /*grow main push footer down*/
 main {
     flex: 1;
+}
+.logo {
+    order: -1;
+    max-width: 200px;
+    max-height: 200px;
+    height: auto;
+    width: auto;
+}
+.top-header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+}
+.top-header h1 {
+    text-align: center;
+}
+h1 {
+    font-size: 2.5rem; /* consistent font size */
+    line-height: 1.2; /* consistent line height */
+    margin: 20px 0; /* consistent margins */
+    padding: 0; /* no unexpected padding */
+    text-align: center; /* Center the text */
+}
+/*menu*/
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    list-style-type: none; /*this got rid of bullet points*/
+    z-index: 9;
+    width: max-content;
+    min-width: 100px;
+    right: 10px;
+}
+#menu li {
+    background-color: var(--primary-color);
+
+}
+#menu-toggle {
+    display: flex;
+    cursor: pointer;
+    background: none;
+    border: none;
+    position: absolute;/*i like that this scrolls with the page*/
+    top: 20px;
+    right: 20px;
+    z-index: 11;
+    padding: 50px;/*this made the hamburger button set in*/
+    font-size: 2rem;/*this made the hamburger button as big as the menu options*/
+}
+/*the text in the nav/menu*/
+nav li a {
+    max-width: 100%;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px;
+}
+nav ul li a.active {
+    background-color: var(--secondary-color);
+    max-width: 100%;
+    padding: 10px;
+    
+
+}
+/*hero*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+    height: 60vh; /* or 100vh for full screen */
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;/*hidding overflow as page shrinks*/
+    color: var(--text-color);
+}
+.hero img {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* this should fill and crop image but doesnt look like its doing anything*/
+    z-index: -1;
+    filter: brightness(0.6); /* makes text more readable look more at this....*/
+}
+.hero h1{
+    order:1;
+    z-index: 1;
+    text-align: center;
+    margin: 1rem 0;
+}
+.hero-text {
+    order:2;
+    z-index: 1;
+    position: relative;
+    text-align: center;
+}
+.hero-button{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color:var(--secondary-color);
+    padding:1.5rem;
+    border-radius: 10px;
+    box-shadow: var(--box-shadow);
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+}
+button:hover,.hero-button:hover {
+    background: #FEF9EF;
+}
+.main-content {
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows: auto auto auto;
+    gap: 20px;
+    margin: 0 auto;
+    align-items: stretch;
+    max-width: 100%;
+}
+/*companies card grid */
+.cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    grid-area: "cards";
+    width: 100%;
+    padding: 10px;
 }
 .foot-container {
     display: flex;
@@ -45,8 +182,9 @@ main {
     font-size: 0.9rem;
 }
 /* the three divs inside footer */
-.foot-container div {
-    gap: 0.5rem;
+.foot-container > div {
+    min-width: 200px;
+    flex: 1 1 200px;
 }
 /* the three socials */
 .footer-social {
