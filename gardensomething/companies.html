@@ -1,0 +1,100 @@
+<!--GARDEN SOMETHING WEBSITE Companies* show grid of favorite companies with links to websites ******************************-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Discover the Saratoga Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/index.html"> <!-- URL of the page -->
+
+    <meta name="description" content="The Discover page for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
+    <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest"><!-- favicon -->
+    <title>Chamber of Commerce Home Page</title>
+
+    <script src="scripts/date.js" defer></script> <!--date for footer -->
+    <script src="scripts/menutog.js" defer></script>
+   
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap">
+
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
+
+</head>
+<body>
+    <!-- preload hero and logo -->
+    <link rel="preload" as="image" href="images/herosaratoga.avif">
+    <link rel="preload" as="image" href="images/logo.avif">
+    <header>
+        <section class="top-header">
+            <h1>Discover</h1>
+            <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
+            <button id="menu-toggle" aria-label="Toggle menu">
+                &#9776;    
+            </button>
+            <nav>
+                <ul id="menu">
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/index.html">Home</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html" class="active">Discover</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/join.html">Join</a></li>
+                </ul> 
+            </nav>
+        </section>
+        <section class="hero">
+            <img src="images/herosaratoga.avif" alt="Welcome to Saratoga Chamber of Commerce">
+            <h1>Explore Our City</h1>
+            <div>
+                <aside id="visit-message"></aside>
+            </div>
+        </section>
+    </header>
+    <main class="main-content2">
+        <h1>Discover Satatoga </h1>
+        
+        <section class= "discover-section">
+            <div class="cards-container"></div>
+        </section>
+            
+    </main>
+    <footer class="foot-container">
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
+            </p>
+            <p>
+                <span id="lastModified" ></span> Katlin Denney WDD231
+            </p>
+        </div>
+        <div>
+            <img src="images/fb.avif" alt="facebook Logo" class="footer-logo">
+            <img src="images/in.avif" alt="linkedin Logo" class="footer-logo">
+            <img src="images/ig.avif" alt="instagram Logo" class="footer-logo">
+        </div>
+        <div>
+            Saratoga Chamber of Commerce<br>
+            123 Main St.<br>
+            Saratoga, CA 12345<br>
+            Phone: (123) 456-7890<br>
+            info@saratogachamber.org<br>
+        </div>
+
+
+    </footer>
+    <script src="scripts/discover.js" type="module"></script>
+</body>
+</html>

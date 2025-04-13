@@ -1,0 +1,176 @@
+<!--GARDEN SOMETHING WEBSITE JOIN/REQUEST*******************************--> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content=" Join the Saratoga Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/join.html"> <!-- URL of the page -->
+
+    <meta name="description" content="This is the join form for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
+    <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest"><!-- favicon -->
+    <title>Join the Saratoga Chamber of Commerce</title>
+
+    <script src="scripts/date.js" defer></script> <!--date for footer -->
+    <script src="scripts/menutog.js" defer></script> <!-- toggle for nav menu hamburger -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
+
+</head>
+<body>
+    <header>
+        <section class="top-header">
+            <h1>Join the Satatoga Chamber of Commerce </h1>
+            <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
+            <button id="menu-toggle" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <nav>
+                <ul id="menu">
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/index.html">Home</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html">Directory</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/join.html" class="active">Join</a></li>
+                </ul> 
+            </nav>
+        </section>
+    </header>
+    <main class= "join-section">
+        <h2>Become a Member</h2>
+        <section class="membership-content">
+            <!--non-profit-->
+            <div class="membership-card">
+                <h3>Non-profit Membership</h3>
+                <button class="membership-link" data-modal="np-modal">View Benefits</button>
+            </div>
+            <dialog id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-desc">
+                <h2 id="np-modal-title">NP Member Benefits</h2>
+                <p id="np-modal-desc">Member benefits like recieving a newsletter in your inbox</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="document.getElementById('np-modal').close()">Close</button>
+            </dialog>
+            <!--bronze-->
+            <div class="membership-card">
+                <h3>Bronze Membership</h3>
+                <button class="membership-link" data-modal="bronze-modal">View Benefits</button>
+            </div>
+            <dialog id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-desc">
+                <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
+                <p id="bronze-modal-desc">Bronze benefits like discounts on event tickets</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+            </dialog>
+            <!--silver-->
+            <div class="membership-card">
+                <h3>Silver Membership</h3>
+                <button class="membership-link" data-modal="silver-modal">View Benefits</button>
+            </div>
+            <dialog id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-desc">
+                <h2 id="silver-modal-title">Silver Membership Benefits</h2>
+                <p id="silver-modal-desc">Silver benefits like free entry to events all season</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="document.getElementById('silver-modal').close()">Close</button>
+            </dialog>
+            <!--gold-->
+            <div class="membership-card">
+                <h3>Gold Membership</h3>
+                <button class="membership-link" data-modal="gold-modal">View Benefits</button>
+            </div>
+            <!--gold dialog box -->
+            <dialog id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-desc">
+                <h2 id="gold-modal-title">Gold Membership Benefits</h2>
+                <p id="gold-modal-desc">Gold benefits like a spotlight position on our home page </p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                <button onclick="document.getElementById('gold-modal').close()">Close</button>
+            </dialog>
+        </section>
+        <section class="form-section"> 
+            <h2>Tell us about yourself</h2>
+            <form id="form" method= "get" action="thankyou.html">
+                <label>First Name:
+                    <input type= "text" name="firstName" autocomplete="given-name" required>
+                </label>
+
+                <label>Last Name:
+                    <input type= "text" name="lastName" autocomplete="family-name" required>
+                </label>
+
+                <label>Title:
+                    <input type="text" name="title" autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}"><!-- no silly characters only letters spaces and hyphens. 7 character min -->
+                </label>
+
+                <label>Email:
+                    <input type="email" name="email" autocomplete="email" placeholder="youremail@email.com" required>
+                </label>
+
+                <label>Phone:
+                    <input type="tel" name="phone" autocomplete="tel" placeholder="(123)123-1234" required>
+                </label>
+
+                <label>Business:
+                    <input type="text" name="business" autocomplete="organization" required>
+                </label>
+
+                <label>Membership Level:
+                    <select name="membership" title="Select your membership level" required>
+                        <option value="" disabled selected>Select a membership:</option>
+                        <option value="np">NP Membership</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Description: 
+                    <textarea name="description" title="Describe your organization"></textarea>
+                </label><br>
+                <input type="hidden" id="timestamp" name="timestamp"><br>
+                <input type="submit" value="Join Us"><br>
+            </form>
+        </section>
+    </main>
+    <footer class="foot-container">
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
+            </p>
+            <p>
+                <span id="lastModified"></span> Katlin Denney WDD231
+            </p>
+        </div>
+        <div>
+            <img src="images/fb.avif" alt="facebook Logo" class="footer-logo">
+            <img src="images/in.avif" alt="linkedin Logo" class="footer-logo">
+            <img src="images/ig.avif" alt="instagram Logo" class="footer-logo">
+        </div>
+        <div>
+            Saratoga Chamber of Commerce<br>
+            123 Main St.<br>
+            Saratoga, CA 12345<br>
+            Phone: (123) 456-7890<br>
+            info@saratogachamber.org<br>
+        </div>
+
+    </footer>
+    <script type="module" src="scripts/timestamp.js"></script>
+    <script type="module" src="scripts/modal.js"></script>
+    <script type="module" src="scripts/join.js"></script>
+</body>
+</html>

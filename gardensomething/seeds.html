@@ -1,0 +1,100 @@
+<!--GARDEN SOMETHING WEBSITE DIRECTORY/SEEDS* show seeds in a grid and toggle planting zones ******************************--> <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Saratoga Chamber of Commerce Directory">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://https://github.com/katdenney/wdd231/blob/main/chamber/images/directory.jpeg">
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/chamber/directory.avif"> <!-- URL of the page -->
+    
+    <meta name="description" content="This is the directory page for my chamber of commerce website."> <!-- Description of the page -->
+    <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="images/favicon_io/site.webmanifest"><!-- favicon -->
+    <title>Saratoga Chamber of Commerce Directory Page</title>
+
+    <script src="scripts/date.js" defer></script> <!-- JavaScript file for the date in the footer -->
+    <script src="scripts/menutog.js" defer></script> <!--hamburger--> 
+    <script src="scripts/view.js" defer></script> <!-- JavaScript file for the view businesses -->
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
+    <link rel="stylesheet" href="styles/styles.css">  <!--Main stylesheet for the chamber website -->
+    <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 640px)">
+    <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px) and (max-width: 1024px)">
+    <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
+    
+    
+   
+</head>
+<body>
+    <header>
+        <section class="top-header"> 
+            <h1>Directory</h1>
+            <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
+            <button id="menu-toggle" aria-label="Toggle menu">
+                &#9776;
+            </button>
+            <nav>
+                <ul id="menu">
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/index.html">Home</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/discover.html">Discover</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/directory.html" class="active">Directory</a></li>
+                    <li><a href="https://katdenney.github.io/wdd231/chamber/join.html">Join</a></li>
+                </ul>  
+            </nav>
+        </section>
+    </header>
+    <main class="main-content2">
+        <h1>Saratoga Chamber of Commerce Directory</h1>
+        <section class="section-content">
+            <h2>Businesses in the Saratoga area</h2>
+            <div class="view-toggle">
+                <button id="gridViewBtn">Grid View</button>
+                <button id="listViewBtn">List View</button>
+            </div>
+        </section>
+        <section class="businesses">
+            <h2>Businesses</h2>
+            <div id="directory" class="grid-view">
+               
+            </div>
+        </section>
+    </main>
+    <footer class="foot-container">
+        <div>
+            <p>
+                &copy; <span id="currentyear"></span> Saratoga Chamber of Commerce
+            </p>
+            <p>
+                <span id="lastModified" ></span> Katlin Denney WDD231
+            </p>
+        </div>
+        <div>
+            <img src="images/fb.avif" alt="facebook Logo" class="footer-logo">
+            <img src="images/in.avif" alt="linkedin Logo" class="footer-logo">
+            <img src="images/ig.avif" alt="instagram Logo" class="footer-logo">
+        </div>
+        <div>
+            Saratoga Chamber of Commerce<br>
+            123 Main St.<br>
+            Saratoga, CA 12345<br>
+            Phone: (123) 456-7890<br>
+            info@saratogachamber.org<br>
+        </div>
+
+
+    </footer>
+    
+</body>
+
+</html>

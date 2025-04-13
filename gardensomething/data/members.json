@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Saratoga Bakery",
+        "address": "123 Main St, Saratoga, CA",
+        "phone": "(123) 456-7890",
+        "website": "https://saratogabakery.com",
+        "image": "bakery.avif",   
+        "membership": 3
+    },
+    {
+        "name": "Tech Solutions",
+        "address": "456 Elm St, Saratoga, CA",
+        "phone": "(987) 654-3210",
+        "website": "https://techsolutions.com",
+        "image": "tech.avif",
+        "membership": 2
+    },
+    {
+        "name": "Green Landscaping",
+        "address": "789 Oak St, Saratoga, CA",
+        "phone": "(555) 123-4567",
+        "website": "https://greenlandscaping.com",
+        "image": "landscaping.avif",
+        "membership": 1
+    },
+    {
+        "name": "Elmwood Bakery",
+        "address": "567 Main St, Saratoga, CA",
+        "phone": "(123) 456-7890",
+        "website": "https://elmwoodbakery.com",
+        "image": "bakery.avif",
+        "membership": 1
+    },
+    {
+        "name": "Stanford IT Services",
+        "address": "234 Pine St, Saratoga, CA",
+        "phone": "(987) 654-3210",
+        "website": "https://stanfordit.com",
+        "image": "tech2.avif",
+        "membership": 3
+    },
+    {
+        "name": "Arbor Landscaping",
+        "address": "426 Grove St, Saratoga, CA",
+        "phone": "(555) 123-4567",
+        "website": "https://arborlandscaping.com",
+        "image": "landscaping2.avif",
+        "membership": 2
+    },
+    {
+        "name": "Saratoga Coffee",
+        "address": "321 Maple St, Saratoga, CA",
+        "phone": "(123) 456-7890",
+        "website": "https://saratogacoffee.com",
+        "image": "coffee.avif",
+        "membership": 1
+    }
+]

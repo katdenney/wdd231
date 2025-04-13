@@ -1,12 +1,11 @@
 //spotlight members on homepage
 async function getSpotlightMembers() {
-    const response = await fetch("data/members.json");
+    const response = await fetch("data/companiesdata.json");
     const members = await response.json();
 
-    const premiumMembers = members.filter(member => member.membership >=2);
-    const selectedMembers = getRandomMembers(premiumMembers, 2 + Math.floor(Math.random()*2));
+    const selectedMembers = getRandomMembers(members, 2 + Math.floor(Math.random()*2));
 
-    displaySpotlight(selectedMembers);
+    displaySpotlight(selectedMembers);//just random spotlights 
 }
 
 function getRandomMembers(array,num) {
@@ -46,11 +45,11 @@ function displaySpotlight(members) {
         card.appendChild(address);
 
         //phone
-        const phone = document.createElement("p");
-        phone.textContent = member.phone;
-        card.appendChild(phone);
+        const description = document.createElement("p");
+        description.textContent = member.description;
+        card.appendChild(description);
 
-        //website... make a real link for a fake webpage ..ughhh 
+        //website
         const website = document.createElement("a");
         website.href = member.website;
         website.target = "_blank"; //open new tab
