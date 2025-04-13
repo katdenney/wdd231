@@ -10,13 +10,14 @@
     --border-radius: 10px;
     --background-color:rgba(246, 244, 198, 0.65);
     --border-color:var(--secondary-color);
+    --font-family: "Barlow", sans-serif;
+    --regular-weight: 400;
+    --bold: 600;
 }
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
+*, *::before, *::after {
+	box-sizing: border-box;/*width and height set only apply to the content of the element*/
+    font-family: var(--font-family);
+    font-weight: var(--regular-weight);
 }
 /*this should make the body take full height. my goal is to help keep footer at the bottom*/
 html, body {
@@ -57,51 +58,78 @@ h1 {
     font-size: 2.5rem; /* consistent font size */
     line-height: 1.2; /* consistent line height */
     margin: 20px 0; /* consistent margins */
-    padding: 0; /* no unexpected padding */
+    padding: 1rem; /* no unexpected padding */
     text-align: center; /* Center the text */
 }
-/*menu*/
-#menu {
-    display: flex;
+/*nav*/
+nav{
+    display:flex;
+    justify-items: center;/*this looks like its working*/
+    align-items: center;
+    margin: 20px;/* space around the items in nav so it doesnt hit the right wall*/
+    text-decoration: none; /*this got rid of underline*/
+}
+#menu {/* ul in nav the menu */
+    display:flex;
     flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
     list-style-type: none; /*this got rid of bullet points*/
     z-index: 9;
     width: max-content;
-    min-width: 100px;
-    right: 10px;
+    top: 60px;
+    background-color: none;/*this because color sticks out under on the left*/
+    box-shadow: none;/*this because shadow shows an edge we dont want on the left*/
 }
-#menu li {
-    background-color: var(--primary-color);
+#menu.show {/*styles for ul while toggled show menu*/
+    display: flex;/*this shows menu*/
+    flex-direction: column;
+    list-style-type: none; /*this got rid of bullet points*/
+    z-index: 10;
+    width: max-content;
+    right: 20px; /*stick to the right*/
+    top: 50px;/*so it doesnt hit the toggle*/
+    background-color: none;/*this because color sticks out under on the left*/
+    box-shadow: none;/*this because color sticks out under on the left*/
+    position: absolute; /*this sticks the menu under the hamburger button*/
+}
 
+#menu li, #menu.show li { /*space around text in the menu */
+    display:flex;
+    justify-content: space-evenly;
+    flex: 1;/*each li take up even space,each item grow equally */
+    max-width: 100%;
+    background-color: pink;
+    padding:10px;
+    align-items: center;/*this finally centered my menu text ~victory~! (I didnt have display flex)*/
+    justify-items: center;/*this should space things evenly is it working? whos to say*/
 }
-#menu-toggle {
+#menu li a { /*text in the menu */
+    
+    padding: 10px;
+    font-weight:var(--bold);
+    text-decoration: none;
+    padding:10px;
+}
+#menu li .active {
+    background-color: var(--third-color);
+    max-width: 100%;
+}
+#menu li:hover {
+    background: #FEF9EF;
+}
+#menu-toggle {/*this is just the button*/
     display: flex;
+    flex-direction: column;
     cursor: pointer;
-    background: none;
+    background-color: pink;
     border: none;
     position: absolute;/*i like that this scrolls with the page*/
-    top: 20px;
+    top: 5px;/*pushing hamburger down to make room for the horizontal menu*/
     right: 20px;
     z-index: 11;
-    padding: 50px;/*this made the hamburger button set in*/
+    padding-right: 50px;/*this made the hamburger button set in*/
     font-size: 2rem;/*this made the hamburger button as big as the menu options*/
 }
-/*the text in the nav/menu*/
-nav li a {
-    max-width: 100%;
-    font-weight: 600;
-    text-decoration: none;
-    padding: 10px;
-}
-nav ul li a.active {
-    background-color: var(--secondary-color);
-    max-width: 100%;
-    padding: 10px;
-    
 
-}
 /*hero*/
 .hero {
     display: flex;
@@ -160,6 +188,41 @@ button:hover,.hero-button:hover {
     margin: 0 auto;
     align-items: stretch;
     max-width: 100%;
+}
+.main-content h2 {
+    grid-column: 1/-1;
+    font-size: 2rem;
+}
+.events, #weather-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height:100%;
+}
+.events {
+    grid-column: 1/2;
+    grid-row: 2;
+}
+
+#weather-section {
+    background-color: var(--secondary-color);
+    grid-column: 2/3;
+    grid-row:2;
+}
+.spotlights {
+    grid-column: 1/-1;
+    grid-row:3;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.spotlights img {
+    box-shadow: var(--box-shadow);
+    border-radius: 5px;
+    width: 100%;
+    height: auto;
 }
 /*companies card grid */
 .cards-container {
