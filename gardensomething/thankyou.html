@@ -4,20 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta property="og:title" content="Thank you Saratoga Chamber of Commerce ">
+    <meta property="og:title" content="Thank you Garden Something">
     <meta property="og:type" content="website">
     <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
-    <meta property="og:url" content="https://katdenney.github.io/wdd231/thankyou.html"> <!-- URL of the page -->
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/gardensomething/thankyou.html"> <!-- URL of the page -->
 
-    <meta name="description" content="This is the thank you page for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
+    <meta name="description" content="This is the thank you page for garden something website."> <!-- Description of the page -->
     <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="images/favicon_io/site.webmanifest"><!-- favicon -->
-    <title>Thank You for Joining the Saratoga Chamber of Commerce</title>
-
+    <title>Thank You for Requesting a Quote</title>
+    
+    <script src="scripts/date.js" defer></script> <!-- JavaScript file for the date in the footer -->
     <script type="module" src="scripts/join.js" defer></script>
     
    
@@ -28,44 +29,51 @@
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@100;400;600&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/normalize.css"> <!-- Normalize CSS for consistent styling across browsers -->
-    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/small.css" media="screen and (max-width: 640px)">
     <link rel="stylesheet" href="styles/medium.css" media="screen and (min-width: 641px) and (max-width: 1024px)">
     <link rel="stylesheet" href="styles/large.css" media="screen and (min-width: 1025px)">
 </head>
 
 <body>
-    <header class="top-header">
-        <h1> The Saratoga Chamber of Commerce</h2>
-        <img src="images/logo.avif" alt="Saratoga Chamber of Commerce Logo" class="logo">
-    </header>
-    <main>
-        <section class="section-content">
-        <h1>Thank you!</h1>
+    <div class="page-wrapper">
+        <header class="top-header">
+            <h1>Garden Something</h2>
+            <img src="images/logo.webp" alt="Garden Something Logo" class="logo">
+        </header>
+        <main>
+            <section class="section-content">
+            <h1>Thank you!</h1>
+            </section>
+            <section id="thankyou">
+            <h2 id="thankyou-modal-title">We appreciate you requesting a quote!</h2>
+            <p id="thankyou-modal-desc">Here's the information you submitted:</p>
+            <ul id="thankyou-details"></ul>
+            <div>
+                <button onclick="window.location.href='index.html'">Close</button>
+            </div>
+            <script type="module" src="scripts/thankyou.js" defer></script>
         </section>
-        <section id="thankyou">
-        <h2 id="thankyou-modal-title">We appreciate you joining!</h2>
-        <p id="thankyou-modal-desc">Here's the information you submitted:</p>
-        <ul id="thankyou-details"></ul>
-        <div>
-            <button onclick="window.location.href='index.html'">Close</button>
-        </div>
-        <script type="module" src="scripts/thankyou.js" defer></script>
-    </section>
-    </main>
-    <footer class="foot-container">
-        <div>
-            <img src="images/fb.avif" alt="facebook Logo" class="footer-logo">
-            <img src="images/in.avif" alt="linkedin Logo" class="footer-logo">
-            <img src="images/ig.avif" alt="instagram Logo" class="footer-logo">
-        </div>
-        <div>
-            Saratoga Chamber of Commerce<br>
-            123 Main St.<br>
-            Saratoga, CA 12345<br>
-            Phone: (123) 456-7890<br>
-            info@saratogachamber.org<br>
-        </div>
-    </footer>
+        </main>
+        <footer class="foot-container">
+            <div>
+            <p>&copy; <span id="currentyear"></span> Garden Something</p>
+            <p><span id="lastModified"></span> Katlin Denney WDD231</p>
+            </div>
+            
+            <div class ="footer-social">
+                <img src="images/facebook.webp" alt="Facebook Logo" class="footer-logo" width="50" height="50" loading="lazy">
+                <img src="images/insta.webp" alt="Instagram Logo" class="footer-logo" width="50" height="50" loading="lazy">
+                <img src="images/linkedin.webp" alt="LinkedIn Logo" class="footer-logo" width="50" height="50" loading="lazy">
+            </div>
+            
+            <div>
+            <p>Garden Something LLC</p>
+            <p>3370 East Del Verde<br>Saratoga, CA 95070</p>
+            <p>Phone: (385) 377-0640</p>
+            <p><a href="mailto:info@gardensomething.org">info@gardensomething.org</a></p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>

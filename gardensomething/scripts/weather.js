@@ -1,4 +1,5 @@
 //weather for home screen 
+//want to change this to the weather from the api of visitor 
 const apiKey = "4868785dd73be99d7a8c9cb3ef547b63"; //weather api key from open weather map
 const lat = "37.2638"; 
 const lon = "-122.0230";

@@ -1,0 +1,65 @@
+/*Base Style Sheet for Garden Something Website*/
+:root {
+    --primary-color: #0094c6;
+    --secondary-color: #cc1d6f;
+    --third-color:#077453;
+    --text-color: #0d0106;
+    --text-shadow: #0d0106 1px 1px 2px;
+    --box-shadow: #0d0106 2px 2px 5px;
+    --border-radius: 10px;
+    --background-color:rgba(246, 244, 198, 0.65);
+    --border-color:var(--secondary-color);
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: "Barlow", sans-serif;
+    font-weight: 400;
+}
+/*this should make the body take full height. my goal is to help keep footer at the bottom*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+/*100vh is 100% of the viewport's height*/
+.page-wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+/*grow main push footer down*/
+main {
+    flex: 1;
+}
+.foot-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+    padding: 2rem;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    border-top: 2px solid var(--border-color);
+    font-size: 0.9rem;
+}
+/* the three divs inside footer */
+.foot-container div {
+    gap: 0.5rem;
+}
+/* the three socials */
+.footer-social {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    gap: 1rem;
+}
+/*the individual logos*/
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    width: 50px; 
+    height: 50px; 
+    object-fit: contain;
+}

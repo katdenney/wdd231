@@ -44,7 +44,7 @@ function displaySpotlight(members) {
         address.textContent = member.address;
         card.appendChild(address);
 
-        //phone
+        //description
         const description = document.createElement("p");
         description.textContent = member.description;
         card.appendChild(description);
