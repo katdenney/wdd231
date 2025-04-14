@@ -43,22 +43,30 @@ main {
     max-height: 200px;
     height: auto;
     width: auto;
+    margin-top: 0px;
+    padding-top: 0px;
 }
 .top-header {
     display: flex;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 10px;
+    position: relative;
+    max-height:200px;
+}
+.center-header {
+    display: flex;
+    flex-direction: center;
+    flex:1;  /*this fixed my header issue and centered my header with the horizontal menu*/
 }
 .top-header h1 {
-    text-align: center;
-}
-h1 {
+    display: flex;
     font-size: 2.5rem; /* consistent font size */
     line-height: 1.2; /* consistent line height */
-    margin: 20px 0; /* consistent margins */
-    padding: 1rem; /* no unexpected padding */
+    margin: 0; /* consistent margins */
+    padding: 0; /* no unexpected padding */
     text-align: center; /* Center the text */
 }
 /*nav*/
@@ -73,9 +81,8 @@ nav{
     display:flex;
     flex-direction: row;
     list-style-type: none; /*this got rid of bullet points*/
-    z-index: 9;
+    z-index: 10;
     width: max-content;
-    top: 60px;
     background-color: none;/*this because color sticks out under on the left*/
     box-shadow: none;/*this because shadow shows an edge we dont want on the left*/
 }
@@ -103,8 +110,6 @@ nav{
     justify-items: center;/*this should space things evenly is it working? whos to say*/
 }
 #menu li a { /*text in the menu */
-    
-    padding: 10px;
     font-weight:var(--bold);
     text-decoration: none;
     padding:10px;

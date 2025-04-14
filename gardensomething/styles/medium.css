@@ -1,4 +1,8 @@
 /* Medium screen styles: 641px–1024px */
 @media screen and (min-width: 641px) and (max-width: 1024px) {
-    
+    .top-header h1 {
+        font-size: 3.5rem;
+        padding: 20px;
+    }
+      
 }
