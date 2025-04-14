@@ -1,5 +1,5 @@
 export function setupModals() {
-    const modalLinks = document.querySelectorAll('.membership-link');
+    const modalLinks = document.querySelectorAll('.modal-link');
     const modals = document.querySelectorAll('dialog');
     //open
     modalLinks.forEach(link => {

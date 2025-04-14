@@ -1,82 +1,72 @@
 [
     {
         "name": "Red Sorrel",
-        "address": "red sorrel",
-        "phone": "(123) 456-7890",
-        "website": "https://saratogabakery.com",
+        "type": "leafy green",
+        "details": "Tolerates Cold",
         "image": "redrorrel.webp",   
-        "membership": 3
+        "plantingzone": 1
     },
     {
         "name": "Arugula",
-        "address": "arugula",
-        "phone": "(987) 654-3210",
-        "website": "https://techsolutions.com",
+        "type": "leafy green",
+        "details": "Tolerates Cold",
         "image": "arugula.webp",
-        "membership": 2
+        "plantingzone": 2
     },
     {
         "name": "Pea",
-        "address": "pea",
-        "phone": "(555) 123-4567",
-        "website": "https://greenlandscaping.com",
+        "type": "vegetable",
+        "details": "Tolerates Cold",
         "image": "peas.webp",
-        "membership": 1
+        "plantingzone": 3
     },
     {
         "name": "Corn",
-        "address": "corn",
-        "phone": "(123) 456-7890",
-        "website": "https://elmwoodbakery.com",
+        "type": "vegetable",
+        "details": "Prefers Full Sun Exposure",
         "image": "corn.webp",
-        "membership": 1
+        "plantingzone": 4
     },
     {
         "name": "Spinach",
-        "address": "spinach",
-        "phone": "(987) 654-3210",
-        "website": "https://stanfordit.com",
+        "type": "leafy green",
+        "details": "Adaptable to Full Sun or Partial Shade",
         "image": "spinach.webp",
-        "membership": 3
+        "plantingzone": 5
     },
     {
         "name": "Carrots",
-        "address": "carrots",
-        "phone": "(555) 123-4567",
-        "website": "https://arborlandscaping.com",
+        "type": "vegetable",
+        "details": "Tolerates Cold",
         "image": "carrots.webp",
-        "membership": 2
+        "plantingzone": 6
     },
     {
         "name": "Daisy",
-        "address": "daisy",
-        "phone": "(123) 456-7890",
-        "website": "https://saratogacoffee.com",
+        "type": "flower",
+        "details": "Prefers Full Sun Exposure",
         "image": "daisy.webp",
-        "membership": 1
+        "plantingzone": 7
     },
     {
         "name": "Lavender",
-        "address": "lavender",
-        "phone": "(555) 123-4567",
-        "website": "https://arborlandscaping.com",
+        "type": "flower",
+        "details": "Prefers Full Sun Exposure",
         "image": "lavender.webp",
-        "membership": 2
+        "plantingzone": 8
     },
     {
         "name": "Habanero",
-        "address": "pepper",
-        "phone": "(555) 123-4567",
-        "website": "https://arborlandscaping.com",
+        "type": "vegetable",
+        "details": "Prefers Full Sun Exposure",
         "image": "habanero.webp",
-        "membership": 2
+        "plantingzone": 9
     },
     {
         "name": "Bat flower",
-        "address": "flower",
-        "phone": "(555) 123-4567",
-        "website": "https://arborlandscaping.com",
+        "type": "flower",
+        "details": "Perfers Partial Shade",
         "image": "batflower.webp",
-        "membership": 2
+        "plantingzone": 10
     }
 ]

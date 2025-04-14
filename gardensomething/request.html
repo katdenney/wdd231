@@ -63,25 +63,25 @@
                 </div>
             </section>
         </header>
-        <!--MOVE THIS TOMORROW WHERE IT MAKES SENSE?-->
+        <!--~~~~~~~~~~~~MOVE THIS?~~~~~~~~~-->
         <main class= "join-section">
             <h2>View Zones</h2>
             <section class="membership-content">
                 <!--non-profit-->
                 <div class="membership-card">
-                    <h3>Non-profit Membership</h3>
-                    <button class="membership-link" data-modal="np-modal">View Benefits</button>
-                </div>
+                    <h3>Let's get your zipcode</h3>
+                    <button class="modal-link" data-modal="np-modal">View Zipcode</button>
+                </div><!--this is not done change membershp link to modal link in set up modals-->
                 <dialog id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-desc">
                     <h2 id="np-modal-title">NP Member Benefits</h2>
-                    <p id="np-modal-desc">Member benefits like recieving a newsletter in your inbox</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <p id="np-modal-desc">something else here</p>
+                    <p id="user-zip">Fetching ZIP...</p>
                     <button onclick="document.getElementById('np-modal').close()">Close</button>
                 </dialog>
                 <!--bronze-->
                 <div class="membership-card">
                     <h3>Bronze Membership</h3>
-                    <button class="membership-link" data-modal="bronze-modal">View Benefits</button>
+                    <button class="modal-link" data-modal="bronze-modal">View Benefits</button>
                 </div>
                 <dialog id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-desc">
                     <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
@@ -92,7 +92,7 @@
                 <!--silver-->
                 <div class="membership-card">
                     <h3>Silver Membership</h3>
-                    <button class="membership-link" data-modal="silver-modal">View Benefits</button>
+                    <button class="modal-link" data-modal="silver-modal">View Benefits</button>
                 </div>
                 <dialog id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-desc">
                     <h2 id="silver-modal-title">Silver Membership Benefits</h2>
@@ -103,7 +103,7 @@
                 <!--gold-->
                 <div class="membership-card">
                     <h3>Gold Membership</h3>
-                    <button class="membership-link" data-modal="gold-modal">View Benefits</button>
+                    <button class="modal-link" data-modal="gold-modal">View Benefits</button>
                 </div>
                 <!--gold dialog box -->
                 <dialog id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-desc">
@@ -143,10 +143,10 @@
                     <label>Planting Zone:
                         <select name="membership" title="Select your membership level" required>
                             <option value="" disabled selected>Select a membership:</option>
-                            <option value="np">NP Membership</option>
-                            <option value="bronze">Bronze Membership</option>
-                            <option value="silver">Silver Membership</option>
-                            <option value="gold">Gold Membership</option>
+                            <option value="zone 1-4">zone 1-4</option><!--this is not done stopping here to get kids-->
+                            <option value="zone 5-6">Bronze Membership</option>
+                            <option value="zone 7-8">Silver Membership</option>
+                            <option value="zone 9-10">Gold Membership</option>
                         </select>
                     </label>
 
@@ -181,5 +181,6 @@
     <script type="module" src="scripts/timestamp.js"></script>
     <script type="module" src="scripts/modal.js"></script>
     <script type="module" src="scripts/join.js"></script>
+    <script src="scripts/locationtozip.js" type="module"></script> <!--this is not done get zip-->
 </body>
 </html>

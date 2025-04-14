@@ -214,6 +214,9 @@ button:hover,.hero-button:hover {
     grid-column: 2/3;
     grid-row:2;
 }
+#weather-city{
+    font-weight: var(--bold);
+}
 .spotlights {
     grid-column: 1/-1;
     grid-row:3;
@@ -228,6 +231,8 @@ button:hover,.hero-button:hover {
     border-radius: 5px;
     width: 100%;
     height: auto;
+    max-width: 200px;
+    max-width: auto;
 }
 /*join/request page */
 /*paste from styles.css edit to here*/
@@ -285,7 +290,7 @@ dialog button{
 #thankyou{
     padding: 10px;
 }
-/*paste from styles.css edit to here*/
+/*paste from form/join styles.css edit to here*/
 /*companies card grid */
 .cards-container {
     display: grid;

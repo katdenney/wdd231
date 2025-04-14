@@ -1,4 +1,4 @@
-//weather for home screen 
+//weather for home screen. reference https://openweathermap.org/
 //want to change this to the weather from the api of visitor ... IT WORKS 
 const apiKey = "4868785dd73be99d7a8c9cb3ef547b63"; //weather api key from open weather map
 
@@ -17,6 +17,8 @@ function fetchWeather() {
             const response = await fetch(apiUrl);
             if (!response.ok) throw new Error("Network response was not ok");
             const data = await response.json();
+
+            document.getElementById("weather-city").textContent = `Hello! I see you're in ${data.city.name}`;
 
             displayCurrentWeather(data.list[0]);//weathernow
             displayThreeDayForecast(data.list);//3day
