@@ -1,19 +1,33 @@
 //weather for home screen 
-//want to change this to the weather from the api of visitor 
+//want to change this to the weather from the api of visitor ...
 const apiKey = "4868785dd73be99d7a8c9cb3ef547b63"; //weather api key from open weather map
-const lat = "37.2638"; 
-const lon = "-122.0230";
-const units = "imperial"; //fahrenheit
-const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
 
-async function fetchWeather() {
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-        throw new Error("Network response was not ok");
+function fetchWeather() {
+    if (!navigator.geolocation) {
+            console.error("Geolocation is not supported by your browser");
+            return;
     }
-    const data = await response.json();
-    displayCurrentWeather(data.list[0]); //weathernow
-    displayThreeDayForecast(data.list); //3day
+    navigator.geolocation.getCurrentPosition(async (position) => {
+        const lat = position.coords.latitude;
+        const lon = position.coords.longitude;
+        const units = "imperial";
+        const apiUrl = `https://api.openweathermap.org/data/2.5/forecast?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
+
+        try {
+            const response = await fetch(apiUrl);
+            if (!response.ok) throw new Error("Network response was not ok");
+            const data = await response.json();
+
+            displayCurrentWeather(data.list[0]);//weathernow
+            displayThreeDayForecast(data.list);//3day
+        } catch (error) {
+            console.error("Error fetching weather:", error);
+            document.getElementById("current-weather").textContent = "Weather data unavailable.";
+        }
+    }, (error) => {
+        console.error("Geolocation error:", error.message);
+        document.getElementById("current-weather").textContent = "Weather data unavailable (location access denied)";
+    });
 }
 
 function displayCurrentWeather(current) {
