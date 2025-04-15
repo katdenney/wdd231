@@ -1,18 +1,25 @@
 /* This is the CSS file for the site plan page */
-* {
-    color:#130D01;
-    font-family: "Barlow", sans-serif;
-    font-weight: 400;
+*, *::before, *::after {
+	box-sizing: border-box;/*width and height set only apply to the content of the element*/
+    font-family: var(--font-family);
+    font-weight: var(--regular-weight);
+    color: black;
+    text-decoration: none;
 }
 :root {
     --primary-color: #0094c6;
-    --secondary-color: #ff331f;
-    --third-color:#077453;
+    --secondary-color: #cc1d6f;
+    --third-color:rgba(250,198,225,0.8);
     --text-color: #0d0106;
+    --light-color: #fefefe;
     --text-shadow: #0d0106 1px 1px 2px;
     --box-shadow: #0d0106 2px 2px 5px;
     --border-radius: 10px;
-    --background-color:rgba(254, 245, 239, 0.65);
+    --background-color:rgba(246, 244, 198, 0.65);
+    --border-color:var(--secondary-color);
+    --font-family: "Barlow", sans-serif;
+    --regular-weight: 400;
+    --bold: 600;
 }
 #menu {
     display: flex;
@@ -21,7 +28,7 @@
     align-items: center;
     list-style-type: none; /*this got rid of bullet points*/
     padding: 10px 0;
-    width: 100%;
+    width: max-content;
     background-color: #0094c6;
     padding: 5px;
     margin-bottom: 5px;
@@ -34,7 +41,7 @@
     padding-right: 20px;
 }
 nav ul li a.active {
-    background-color: #077453;
+    background-color:var(--secondary-color);
     color:#FEF5EF;
     border-radius: 5px;
 }
@@ -43,8 +50,13 @@ nav ul li a:hover {
     border-radius: 5px;
 }
 nav ul li a:visited {
-    background: color #077453;
+    background-color:var(--secondary-color);
     color: #FEF9EF;
+}
+header {
+    background-color: var(--third-color);
+    box-shadow: #011936 2px 2px 5px;
+    border-radius: var(--border-radius);
 }
 body {
     text-align: center;
@@ -53,6 +65,7 @@ body {
     font-weight: 400;
     background-color: #FEF5EF;
     padding: 60px;
+    background-color: var(--background-color);
 }
 h2 {
     background-color: #0094c6;

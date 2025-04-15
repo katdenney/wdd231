@@ -6,7 +6,7 @@
 :root {
     --primary-color: #0094c6;
     --secondary-color: #cc1d6f;
-    --third-color:#077453;
+    --third-color:rgba(250,198,225,0.8);
     --text-color: #0d0106;
     --light-color: #fefefe;
     --text-shadow: #0d0106 1px 1px 2px;
