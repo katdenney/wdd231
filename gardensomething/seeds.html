@@ -20,7 +20,7 @@
 
     <script src="scripts/date.js" defer></script> <!-- JavaScript file for the date in the footer -->
     <script src="scripts/menutog.js" defer></script> <!--hamburger--> 
-    <script src="scripts/view.js" defer></script> <!-- JavaScript file for the view businesses -->
+    <!-- JavaScript file for the view businesses -->
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -69,15 +69,17 @@
             <h1>Garden Something Seed Directory</h1>
             <section class="section-content">
                 <h2>Our Favorite Seeds</h2>
-                <div class="view-toggle">
-                    <button id="gridViewBtn">Zone 1-2</button>
-                    <button id="listViewBtn">Zone 3-4</button>
+                <div class="zone-buttons">
+                    <button data-zone="1-2">Zone 1-2</button>
+                    <button data-zone="3-4">Zone 3-4</button>
+                    <button data-zone="5-6">Zone 5-6</button>
+                    <button data-zone="7-8">Zone 7-8</button>
+                    <button data-zone="9-10">Zone 9-10</button>
                 </div>
             </section>
-            <section class="businesses">
-                <h2>Businesses</h2>
-                <div id="directory" class="grid-view">
-                
+            <section class="seeds">
+                <h2>Seeds</h2>
+                <div id="seed-container"></div>
                 </div>
             </section>
         </main>
@@ -101,7 +103,7 @@
             </div>
         </footer>
     </div>
-    
+    <script src="scripts/seedsort.js" type="module"></script> <!--this is not done ....................-->
 </body>
 
 </html>

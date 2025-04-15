@@ -8,16 +8,16 @@
     <meta property="og:title" content=" Join the Saratoga Chamber of Commerce">
     <meta property="og:type" content="website">
     <meta property="og:image" content="#"> <!-- Placeholder for an image URL -->
-    <meta property="og:url" content="https://katdenney.github.io/wdd231/join.html"> <!-- URL of the page -->
+    <meta property="og:url" content="https://katdenney.github.io/wdd231/request.html"> <!-- URL of the page -->
 
-    <meta name="description" content="This is the join form for the Saratoga Chamber of Commerce website."> <!-- Description of the page -->
+    <meta name="description" content="This is the page to request a quote from Garden Something"> <!-- Description of the page -->
     <meta name="author" content="Katlin Christine Denney"> <!-- Hi I'm the author -->
 
     <link rel="apple-touch-icon" sizes="180x180" href="images/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="images/favicon_io/site.webmanifest"><!-- favicon -->
-    <title>Request a quote</title>
+    <title>Request a Quote</title>
 
     <script src="scripts/date.js" defer></script> <!--date for footer -->
     <script src="scripts/menutog.js" defer></script> <!-- toggle for nav menu hamburger -->
@@ -63,54 +63,42 @@
                 </div>
             </section>
         </header>
-        <!--~~~~~~~~~~~~MOVE THIS?~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~-->
         <main class= "join-section">
             <h2>View Zones</h2>
-            <section class="membership-content">
-                <!--non-profit-->
-                <div class="membership-card">
+            <section class="hardiness-content">
+                <!--ZIP CODE-->
+                <div class="hardiness-card">
                     <h3>Let's get your zipcode</h3>
-                    <button class="modal-link" data-modal="np-modal">View Zipcode</button>
-                </div><!--this is not done change membershp link to modal link in set up modals-->
-                <dialog id="np-modal" aria-labelledby="np-modal-title" aria-describedby="np-modal-desc">
-                    <h2 id="np-modal-title">NP Member Benefits</h2>
-                    <p id="np-modal-desc">something else here</p>
+                    <button class="modal-link" data-modal="zip-modal">View Zipcode</button>
+                </div>
+                <dialog id="zip-modal" aria-labelledby="zip-modal-title" aria-describedby="zip-modal-desc">
+                    <h2 id="zip-modal-title">Zip Code</h2>
+                    <p id="zip-modal-desc">Here is your zip code fetched by API</p>
                     <p id="user-zip">Fetching ZIP...</p>
-                    <button onclick="document.getElementById('np-modal').close()">Close</button>
+                    <button onclick="document.getElementById('zip-modal').close()">Close</button>
                 </dialog>
-                <!--bronze-->
-                <div class="membership-card">
-                    <h3>Bronze Membership</h3>
-                    <button class="modal-link" data-modal="bronze-modal">View Benefits</button>
+                <!--hardiness zone-->
+                <div class="hardiness-card">
+                    <h3>Your Zone</h3>
+                    <button class="modal-link" data-modal="zone-modal">View Zone</button>
                 </div>
-                <dialog id="bronze-modal" aria-labelledby="bronze-modal-title" aria-describedby="bronze-modal-desc">
-                    <h2 id="bronze-modal-title">Bronze Membership Benefits</h2>
-                    <p id="bronze-modal-desc">Bronze benefits like discounts on event tickets</p>
+                <dialog id="zone-modal" aria-labelledby="zone-modal-title" aria-describedby="zone-modal-desc">
+                    <h2 id="zone-modal-title">Hardiness Zone</h2>
+                    <p id="zone-modal-desc">The hardiness zone can tell you what and when to plant in your area.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <button onclick="document.getElementById('bronze-modal').close()">Close</button>
+                    <button onclick="document.getElementById('zone-modal').close()">Close</button>
                 </dialog>
-                <!--silver-->
-                <div class="membership-card">
-                    <h3>Silver Membership</h3>
-                    <button class="modal-link" data-modal="silver-modal">View Benefits</button>
+                <!--map-->
+                <div class="hardiness-card">
+                    <h3>Hardiness Map</h3>
+                    <button class="modal-link" data-modal="map-modal">Map</button>
                 </div>
-                <dialog id="silver-modal" aria-labelledby="silver-modal-title" aria-describedby="silver-modal-desc">
-                    <h2 id="silver-modal-title">Silver Membership Benefits</h2>
-                    <p id="silver-modal-desc">Silver benefits like free entry to events all season</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <button onclick="document.getElementById('silver-modal').close()">Close</button>
-                </dialog>
-                <!--gold-->
-                <div class="membership-card">
-                    <h3>Gold Membership</h3>
-                    <button class="modal-link" data-modal="gold-modal">View Benefits</button>
-                </div>
-                <!--gold dialog box -->
-                <dialog id="gold-modal" aria-labelledby="gold-modal-title" aria-describedby="gold-modal-desc">
-                    <h2 id="gold-modal-title">Gold Membership Benefits</h2>
-                    <p id="gold-modal-desc">Gold benefits like a spotlight position on our home page </p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    <button onclick="document.getElementById('gold-modal').close()">Close</button>
+                <dialog id="map-modal" aria-labelledby="map-modal-title" aria-describedby="map-modal-desc">
+                    <h2 id="map-modal-title">USDA Hardiness Map</h2>
+                    <p id="map-modal-desc">Detailed map of hardiness zones</p>
+                    <img src="images/hardiness-map.webp" alt="US map">
+                    <button onclick="document.getElementById('map-modal').close()">Close</button>
                 </dialog>
             </section>
             <section class="form-section"> 

@@ -38,7 +38,7 @@
         "name": "Carrots",
         "type": "vegetable",
         "details": "Tolerates Cold",
-        "image": "carrots.webp",
+        "image": "carrot.webp",
         "plantingzone": 6
     },
     {

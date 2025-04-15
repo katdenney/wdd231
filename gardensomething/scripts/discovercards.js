@@ -17,6 +17,6 @@ export async function loadCards() {
         container.appendChild(card);
       });
     } catch (error) {
-      console.error("Error loading cards:", error);
+      console.error("Something went wrong. ERROR loading cards:", error);
     }
   }
