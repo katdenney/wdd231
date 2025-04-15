@@ -58,7 +58,7 @@ main {
 }
 .center-header {
     display: flex;
-    flex-direction: center;
+    flex-direction:row;
     flex:1;  /*this fixed my header issue and centered my header with the horizontal menu*/
 }
 .top-header h1 {
@@ -83,7 +83,6 @@ nav{
     list-style-type: none; /*this got rid of bullet points*/
     z-index: 10;
     width: max-content;
-    background-color: none;/*this because color sticks out under on the left*/
     box-shadow: none;/*this because shadow shows an edge we dont want on the left*/
 }
 #menu.show {/*styles for ul while toggled show menu*/
@@ -94,7 +93,6 @@ nav{
     width: max-content;
     right: 20px; /*stick to the right*/
     top: 50px;/*so it doesnt hit the toggle*/
-    background-color: none;/*this because color sticks out under on the left*/
     box-shadow: none;/*this because color sticks out under on the left*/
     position: absolute; /*this sticks the menu under the hamburger button*/
 }
@@ -108,24 +106,26 @@ nav{
     padding:10px;
     align-items: center;/*this finally centered my menu text ~victory~! (I didnt have display flex)*/
     justify-items: center;/*this should space things evenly is it working? whos to say*/
+    
 }
 #menu li a { /*text in the menu */
     font-weight:var(--bold);
     text-decoration: none;
     padding:10px;
+    color: var(--text-color);
 }
 #menu li .active {
-    background-color: var(--third-color);
+    background-color: rgba(246, 231, 246, 0.6);
     max-width: 100%;
 }
 #menu li:hover {
-    background: #FEF9EF;
+    background: rgba(246, 231, 246, 0.4);;
 }
 #menu-toggle {/*this is just the button*/
     display: flex;
     flex-direction: column;
     cursor: pointer;
-    background-color: pink;
+    background-color: var(--background-color);
     border: none;
     position: absolute;/*i like that this scrolls with the page*/
     top: 5px;/*pushing hamburger down to make room for the horizontal menu*/
@@ -232,7 +232,7 @@ button:hover,.hero-button:hover {
     width: 100%;
     height: auto;
     max-width: 200px;
-    max-width: auto;
+    max-width: 200px;
 }
 /*join/request page */
 /*paste from styles.css edit to here*/
@@ -298,7 +298,7 @@ dialog button{
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1rem;
-    grid-area: "cards";
+    grid-area: cards;
     width: 100%;
     height: 100%;
     padding: 10px;
