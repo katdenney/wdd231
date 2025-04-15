@@ -57,7 +57,7 @@
                 </nav>
             </section>
             <section class="hero">
-                <h1>Let us build you a garden</h1>
+                <h2>Let us build you a garden</h2>
                 <img src="images/pinkhero.webp" alt="hero image of flowers">
                 <div class="hero-text">
                 </div>
@@ -69,33 +69,36 @@
             <section class="hardiness-content">
                 <!--ZIP CODE-->
                 <div class="hardiness-card">
-                    <h3>Let's get your zipcode</h3>
+                    <h2>Let's get your zipcode</h2>
                     <button class="modal-link" data-modal="zip-modal">View Zipcode</button>
                 </div>
                 <dialog id="zip-modal" aria-labelledby="zip-modal-title" aria-describedby="zip-modal-desc">
-                    <h2 id="zip-modal-title">Zip Code</h2>
+                    <h3 id="zip-modal-title">Zip Code</h3>
                     <p id="zip-modal-desc">Here is your zip code fetched by API</p>
                     <p id="user-zip">Fetching ZIP...</p>
                     <button onclick="document.getElementById('zip-modal').close()">Close</button>
                 </dialog>
                 <!--hardiness zone-->
                 <div class="hardiness-card">
-                    <h3>Your Zone</h3>
+                    <h2>Find Your Zone</h2>
                     <button class="modal-link" data-modal="zone-modal">View Zone</button>
                 </div>
                 <dialog id="zone-modal" aria-labelledby="zone-modal-title" aria-describedby="zone-modal-desc">
                     <h2 id="zone-modal-title">Hardiness Zone</h2>
                     <p id="zone-modal-desc">The hardiness zone can tell you what and when to plant in your area.</p>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+                    <label for="zipInput">Enter your ZIP code:</label>
+                    <input type="text" id="zipInput" maxlength="5" placeholder="e.g. 94087">
+                    <button id="getZoneBtn">Get My Zone</button>
+                    <p id="zoneResult">Loading...</p>
                     <button onclick="document.getElementById('zone-modal').close()">Close</button>
                 </dialog>
                 <!--map-->
                 <div class="hardiness-card">
-                    <h3>Hardiness Map</h3>
+                    <h2>Hardiness Map</h2>
                     <button class="modal-link" data-modal="map-modal">Map</button>
                 </div>
                 <dialog id="map-modal" aria-labelledby="map-modal-title" aria-describedby="map-modal-desc">
-                    <h2 id="map-modal-title">USDA Hardiness Map</h2>
+                    <h3 id="map-modal-title">USDA Hardiness Map</h3>
                     <p id="map-modal-desc">Detailed map of hardiness zones</p>
                     <img src="images/hardiness-map.webp" alt="US map">
                     <button onclick="document.getElementById('map-modal').close()">Close</button>
@@ -142,7 +145,7 @@
                         <textarea name="description" title="Describe your request"></textarea>
                     </label><br>
                     <input type="hidden" id="timestamp" name="timestamp"><br>
-                    <input type="submit" value="Request Quote"><br>
+                    <input class="modal-link" type="submit" value="Request Quote"><br>
                 </form>
             </section>
         </main>
@@ -163,6 +166,7 @@
             <p>3370 East Del Verde<br>Saratoga, CA 95070</p>
             <p>Phone: (385) 377-0640</p>
             <p><a href="mailto:info@gardensomething.org">info@gardensomething.org</a></p>
+            <p>Source https://github.com/waldoj/frostline</p>
             </div>
         </footer>
     </div>
@@ -170,5 +174,6 @@
     <script type="module" src="scripts/modal.js"></script>
     <script type="module" src="scripts/join.js"></script>
     <script src="scripts/locationtozip.js" type="module"></script> <!--this is not done get zip-->
+    <script src="scripts/ziptozone.js" type="module"></script> <!--this is not done get zip-->
 </body>
 </html>

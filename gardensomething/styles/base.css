@@ -1,4 +1,8 @@
 /*Base Style Sheet for Garden Something Website*/
+@keyframes slideIn {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0); }
+}
 :root {
     --primary-color: #0094c6;
     --secondary-color: #cc1d6f;
@@ -18,6 +22,16 @@
 	box-sizing: border-box;/*width and height set only apply to the content of the element*/
     font-family: var(--font-family);
     font-weight: var(--regular-weight);
+    color: black;
+    text-decoration: none;
+}
+/*font*/
+.hero h2{
+    font-size: 3rem;
+    font-style: italic;
+}
+h2{
+    font-size: 2rem;
 }
 /*this should make the body take full height. my goal is to help keep footer at the bottom*/
 html, body {
@@ -102,17 +116,19 @@ nav{
     justify-content: space-evenly;
     flex: 1;/*each li take up even space,each item grow equally */
     max-width: 100%;
-    background-color: pink;
+    background-color: rgba(250,198,225,0.8);
     padding:10px;
     align-items: center;/*this finally centered my menu text ~victory~! (I didnt have display flex)*/
     justify-items: center;/*this should space things evenly is it working? whos to say*/
-    
+    box-shadow: var(--box-shadow);
 }
-#menu li a { /*text in the menu */
+#menu li a, .modal-link { /*text in the menu */
     font-weight:var(--bold);
     text-decoration: none;
     padding:10px;
     color: var(--text-color);
+    box-shadow: var(--box-shadow);
+    background-color: rgba(250,198,225,0.8);
 }
 #menu li .active {
     background-color: rgba(246, 231, 246, 0.6);
@@ -178,11 +194,8 @@ nav{
     padding:1.5rem;
     border-radius: 10px;
     box-shadow: var(--box-shadow);
-    color: black;
-    text-decoration: none;
-    font-weight: 600;
 }
-button:hover,.hero-button:hover {
+button:hover,.hero-button:hover, .modal-link:hover{
     background: #FEF9EF;
 }
 .main-content {
@@ -194,9 +207,11 @@ button:hover,.hero-button:hover {
     align-items: stretch;
     max-width: 100%;
 }
-.main-content h2 {
+main h2 {
+    display: grid;
+    place-items: center;
     grid-column: 1/-1;
-    font-size: 2rem;
+    
 }
 .events, #weather-section {
     display:flex;
@@ -207,6 +222,7 @@ button:hover,.hero-button:hover {
 .events {
     grid-column: 1/2;
     grid-row: 2;
+    background-color: rgba(250,198,225,0.8);
 }
 
 #weather-section {
@@ -215,7 +231,10 @@ button:hover,.hero-button:hover {
     grid-row:2;
 }
 #weather-city{
+    display: grid;
+    place-items: center;
     font-weight: var(--bold);
+    font-style: italic;
 }
 .spotlights {
     grid-column: 1/-1;
@@ -235,17 +254,15 @@ button:hover,.hero-button:hover {
     max-width: 200px;
 }
 /*join/request page */
-/*paste from styles.css edit to here*/
 /* ................................................*/
 dialog {
     padding: 20px;
     justify-content: center;
     border-radius: var(--border-radius);
 }
-dialog button{
+dialog button {
     background-color: var(--primary-color);
     box-shadow: var(--box-shadow);
-    animation: fadeIn 5s ease-in;
     border-radius: var(--border-radius);  
 }
 .join-section {
@@ -259,6 +276,11 @@ dialog button{
     background-color: var(--background-color);
     max-width: 100%;
     overflow-x: hidden; 
+    animation: slideIn 1s ease-out; /* here is an animation .............*/
+}
+.join-section input {
+    display: grid;
+    place-items: center;
 }
 .hardiness-content, .form-section {
     display:flex;
@@ -288,6 +310,7 @@ dialog button{
     border-radius: 5px;
     padding:10px;
 }
+
 #thankyou{
     padding: 10px;
 }
@@ -305,12 +328,13 @@ dialog button{
 }
 .card{
     border: 1px solid;
-  border-color: var(--text-color);
-  padding: 1rem;
-  background: var(--light-color);
-  border-radius: var(--border-radius);
-  text-align: center;
-  box-shadow: var(--box-shadow);
+    border-color: var(--text-color);
+    padding: 1rem;
+    background: var(--light-color);
+    border-radius: var(--border-radius);
+    text-align: center;
+    box-shadow: var(--box-shadow);
+    background-color: rgba(250,198,225,0.7);
 }
 .card img {
     width: 100%;
@@ -359,7 +383,6 @@ dialog button{
     gap: 2rem;
     padding: 2rem;
     background-color: var(--background-color);
-    color: var(--text-color);
     border-top: 2px solid var(--border-color);
     font-size: 0.9rem;
 }

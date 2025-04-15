@@ -1,10 +1,7 @@
 //Getting zipcode for seed selection. reference https://opencagedata.com/
 //PLAN:
 //Reverse geocode coordinates to zip code (originally wanted to combine this with weather but seperate is better to reuse)
-    // -get user's latitude and longitude
-    // -use opencage geocoding api
-    // -get postal code
-    //my key 06dc8bd49e6740b8bb37d07c4e4e05af
+//my key 06dc8bd49e6740b8bb37d07c4e4e05af
 // Use zip code to determine hardiness zone
 //Map zip codes to zones json file?
 //Filter plant cards based on zone from a JSON file
