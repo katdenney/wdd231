@@ -310,9 +310,15 @@ dialog button {
     border-radius: 5px;
     padding:10px;
 }
-
 #thankyou{
     padding: 10px;
+    background-color: var(--third-color);
+}
+#thankyou button {
+    background-color: var(--secondary-color);
+    font-size: 1.5rem;
+    box-shadow: var(--box-shadow);
+    border-radius: var(--border-radius);
 }
 /*paste from form/join styles.css edit to here*/
 /* ................................................*/
