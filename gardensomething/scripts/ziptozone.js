@@ -1,6 +1,6 @@
 //using https://phzmapi.org/
 
-import { setupModals } from './modal.js';
+import { setupModals } from './modules/modal.js';
 
 document.addEventListener('DOMContentLoaded', ()=> {
     setupModals();

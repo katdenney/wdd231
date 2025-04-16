@@ -104,9 +104,10 @@
                     <button onclick="document.getElementById('map-modal').close()">Close</button>
                 </dialog>
             </section>
+            <!--~~~~~~~~~~~~~~~~~~~~~-->
             <section class="form-section"> 
                 <h2>Tell us about yourself</h2>
-                <form id="form" method= "get" action="thankyou.html">
+                <form id="form" method="get" action="thankyou.html">
                     <label>First Name:
                         <input type= "text" name="firstName" autocomplete="given-name" required>
                     </label>
@@ -136,8 +137,8 @@
                             <option value="" disabled selected>Select a hardiness zone:</option>
                             <option value="zone 1-4">zone 1-4</option>
                             <option value="zone 5-6">zone 5-6</option>
-                            <option value="zone 7-8">"zone 7-8"</option>
-                            <option value="zone 9-10">"zone 7-8"</option>
+                            <option value="zone 7-8">zone 7-8</option>
+                            <option value="zone 9-10">zone 9-10</option>
                         </select>
                     </label>
 
@@ -145,7 +146,7 @@
                         <textarea name="description" title="Describe your request"></textarea>
                     </label><br>
                     <input type="hidden" id="timestamp" name="timestamp"><br>
-                    <input class="modal-link" type="submit" value="Request Quote"><br>
+                    <input type="submit" value="Request Quote"><br>
                 </form>
             </section>
         </main>
@@ -170,10 +171,10 @@
             </div>
         </footer>
     </div>
-    <script type="module" src="scripts/timestamp.js"></script>
-    <script type="module" src="scripts/modal.js"></script>
-    <script type="module" src="scripts/join.js"></script>
-    <script src="scripts/locationtozip.js" type="module"></script> <!--this is done get zip-->
-    <script src="scripts/ziptozone.js" type="module"></script> <!--this is  done get zip-->
+    <script type="module" src="scripts/modules/timestamp.js"></script>
+    <script type="module" src="scripts/modules/modal.js"></script>
+    <script type="module" src="scripts/form.js"></script>
+    <script type="module" src="scripts/locationtozip.js"></script> <!--this is done get zip-->
+    <script type="module" src="scripts/ziptozone.js"></script> <!--this is  done get zip-->
 </body>
 </html>

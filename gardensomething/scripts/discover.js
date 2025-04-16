@@ -1,5 +1,5 @@
-import { loadCards } from './discovercards.js';
-import { displayVisitMessage } from './visited.js';
+import { loadCards } from './modules/discovercards.js';
+import { displayVisitMessage } from './modules/visited.js';
 
 document.addEventListener('DOMContentLoaded', () => {
   loadCards();

@@ -278,10 +278,7 @@ dialog button {
     overflow-x: hidden; 
     animation: slideIn 1s ease-out; /* here is an animation .............*/
 }
-.join-section input {
-    display: grid;
-    place-items: center;
-}
+
 .hardiness-content, .form-section {
     display:flex;
     flex-direction: column;
